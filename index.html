@@ -1,83 +1,155 @@
-<!DOCTYPE html>
-<html>
+<doctype html>  
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <title>Rundeck.org - Open Source Automation</title>
+  <meta name="description" content="rundeck provides an next generation, opensource automation.">
+  <meta name="author" content="Noah Campbell">
 
-  <title>dtolabs/rundeck @ GitHub</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #e61f12;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #19e0ed; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #19e0ed; }
-    h3 { text-align: center; color: #19e0ed; }
-    a { color: #19e0ed; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/nav.css?v=2">
+  <link rel="stylesheet" href="css/960.css?v=2">
+  <link rel="stylesheet" type="text/css" href="css/skin.css" />
+  
+  <script src="js/libs/modernizr-1.6.min.js"></script>
 </head>
 
-<body>
-  <a href="http://github.com/dtolabs/rundeck"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
 
   <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/dtolabs/rundeck/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/dtolabs/rundeck/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    <nav>
+      <ul  class="container_12">
+        <li class="item downloads grid_3">
+        <a href="downloads.html">
+          <h1>Downloads</h1>
+          <p class="rd_version">1.3.x</p>
+          </a>
+        </li>
+        <li class="item docs grid_3">
+          <a href="/docs/index.html" target="_blank">
+            <h1>Documentation</h1>
+            <p class="rd_version">1.3.x</p>
+          </a>
+        </li>
+        <li class="item help grid_3">
+          <a href="help.html">
+            <h1>Get Help</h1>
+            <p>IRC List Tracker</p>
+          </a>
+        </li>
+        <li class="item source grid_3">
+          <a href="https://github.com/dtolabs/rundeck">
+            <h1>Source</h1>
+            <p>On GitHub</p>
+          </a>
+        </li>
+      </ul>  
+    </nav>
+    
+    
+    <section id="introduction">
+    <div class="container_12">
+    
+      
+    
+      <div id="movies"  class="jcarousel-skin-tango">
+        <ul>
+          <li><a href="downloads.html"><img id="comingsoon" src="images/rundeck640.png" style="width:600px"/></a></li>
+          <li><iframe src="http://player.vimeo.com/video/22902648?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22902648">Introducing Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Introduces ad hoc commands, Jobs, Nodes and history features the Rundeck</p></li>
+          <li><iframe src="http://player.vimeo.com/video/22903167?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22903167">Ad hoc commands in Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Describes how to execute ad hoc commands, any system command or script executed on the filtered remote Nodes</p></li>
+          <li><iframe src="http://player.vimeo.com/video/22903387?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22903387">Running Jobs in Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Describes how to navigate, run, and watch Jobs. Introduces how to manage choices to Job options.</p></li>
+          <li><iframe src="http://player.vimeo.com/video/22903922?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22903922">Creating Jobs with Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Explains how to create Jobs, workflows, and options through the Rundeck GUI</p></li>
+          <li><a href="downloads.html"><img id="comingsoon" src="images/rundeck640.png" style="width:600px"/></a></li>
+        </ul>
+      </div>
+      
+      <div id="controller">
+        <ul>
+          <li><a href="#" onclick="scroll(2)" title="Introducing Rundeck"><img src="images/intro_tb_play.jpg"></a></li>
+          <li><a href="#" onclick="scroll(3)" title="Ad hoc commands in Rundeck"><img src="images/adhoc_tb_play.jpg"></a></li>
+          <li><a href="#" onclick="scroll(4)" title="Running Jobs in Rundeck"><img src="images/running_tb_play.jpg"></a></li>
+          <li><a href="#" onclick="scroll(5)" title="Creating Jobs with Rundeck"><img src="images/create_tb_play.jpg"></a></li>
+        </ul>
+      </div>
+      
     </div>
-
-    <h1><a href="http://github.com/dtolabs/rundeck">rundeck</a>
-      <span class="small">by <a href="http://github.com/dtolabs">dtolabs</a></span></h1>
-
-    <div class="description">
-      the most awesome distributed command dispatching job console
+    </section>
+    
+    <section>
+    <div class="container_12">
+    RunDeck is cross-platform open source software that helps you automate ad-hoc and routine procedures in data center or cloud environments. RunDeck allows you to run tasks on any number of nodes from a web-based or command-line interface. RunDeck also includes other features that make it easy to scale up your scripting efforts including: access control, workflow building, scheduling, logging, and integration with external sources for node and option data. <a href="docs/RunDeck-Guide.html">Read more in the User Manual...</a>
     </div>
-
-    <p>RunDeck is cross-platform open source software that helps you automate ad-hoc and routine procedures in data center or cloud environments. RunDeck allows you to run tasks on any number of nodes from a web-based or command-line interface. RunDeck also includes other features that make it easy to scale up your scripting efforts including: access control, workflow building, scheduling, logging, and integration with external sources for node and option data.</p><h2>Dependencies</h2>
-<p>java 1.5</p>
-<h2>Install</h2>
-<p>java -jar rundeck-1.3.2.jar</p>
-<h2>License</h2>
-<p>Apache 2.0</p>
-<h2>Authors</h2>
-<p>Alexei Bratuhin (alexei.bratuhin@googlemail.com)<br/>Alex Honor (alexhonor@yahoo.com)<br/>Bruce Mitchener (bruce.mitchener@gmail.com)<br/>Esa Laine (esa.laine@chase.com)<br/>Greg Schueler (greg.schueler@gmail.com)<br/>Robert Krombholz (kran@kran.com)<br/>Kunal Parikh (kunal@techthumb.in)<br/>Noah Campbell (noahcampbell@gmail.com)<br/>Paul Paradise (paulpar@gmail.com)<br/>pgdad (pgdad@hotmail.com)<br/>Vincent Behar (v.behar@free.fr)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>DTO Labs (info@dtosolutions.com)<br/>      </p>
+    </section>
+    
+        <footer>
+    
+        <a href="http://groups.google.com/group/rundeck-discuss">rundeck-discuss</a>
+    
+        </footer>
+  </div> <!--! end of #container -->
 
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/dtolabs/rundeck/zipball/master">zip</a> or
-      <a href="http://github.com/dtolabs/rundeck/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/dtolabs/rundeck</pre>
-    </p>
+  <!-- Javascript at the bottom for fast page loading -->
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/dtolabs/rundeck">dtolabs/rundeck</a>
-    </div>
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
 
-  </div>
 
+  <script type="text/javascript" src="js/rdversion.js"></script>
+  <script src="js/plugins.js?v=1"></script>
+  <script src="js/script.js?v=1"></script>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
+  <![endif]-->
+
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+  <script type="text/javascript">
+  
+    function scroll(pos) {
+      var carousel = $('#movies').data('jcarousel')
+      carousel.scroll(pos);
+      return false;
+    }
+  
+    $(document).ready(function() {
+      $('#movies').jcarousel({
+        'scroll':1,
+        'visible':1
+      });
+    });
+
+   var _gaq = [['_setAccount', 'UA-529275-13'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
   
 </body>
 </html>
