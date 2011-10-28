@@ -34,7 +34,7 @@ fi
 
 pushd /tmp
 
-curl -L -o "/tmp/$JAR_NAME" $CURL_OPTS $JAR_URL || fail "Unable to download $JAR_URL"
+curl -f -L -o "/tmp/$JAR_NAME" $CURL_OPTS $JAR_URL || fail "Unable to download $JAR_URL"
 SHASUM=$(shasum "/tmp/$JAR_NAME" |cut -d' ' -f1)
 
 popd
