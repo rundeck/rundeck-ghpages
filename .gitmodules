@@ -7,8 +7,8 @@
 [submodule "1.3.2"]
 	path = 1.3.2
 	url = git://github.com/dtolabs/rundeck-docs.git
-[submodule "1.4rc"]
-	path = 1.4rc
+[submodule "1.4.1rc"]
+	path = 1.4.1rc
 	url = git://github.com/dtolabs/rundeck-docs.git
 [submodule "1.4"]
 	path = 1.4
