@@ -51,8 +51,8 @@ body, select, input, textarea {   color: #444; }
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: red; text-decoration: none;}
+a:hover { text-decoration: underline; }
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
@@ -77,8 +77,8 @@ input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 
 .no-boxshadow input:invalid, 
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::-moz-selection{ background: #FF0000; color:#fff; text-shadow: none; }
+::selection { background:#FF0000; color:#fff; text-shadow: none; } 
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
 
 button {  width: auto; overflow: visible; }
@@ -101,8 +101,8 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5;
-  background-color: #CCC;
-  background-image: url('../images/background-texture.png');
+  background-color: #efefef;
+  background-image: url('../images/graybg1.png');
   background-repeat: repeat;
 }
 
@@ -119,20 +119,36 @@ body {
   box-shadow: 0px 0px 15px rgba(0,0,0,.75);
 }
 
-#introduction {
-  background: inherit;
+#index {
 }
-
+  article.introduction {
+  background-color: #dedede;
+         text-shadow: -1px -1px 2px rgba(255,255,255,0.8);
+  
+  }
 section {
 	text-align: left;
-	background-color: #efefef;
-	padding-top: 25px;
-	padding-bottom: 25px;
+}
+article{
+	background-color: #fff;
+	padding-top:25px;
+	padding-bottom:25px;
+	
 }
 
 
+section h3 {
+	font-size: 150%;
+	line-height: 100%;
+	font-weight:normal;
+  margin: 0 10px 5px 10px;
+}
 section h2 {
 	font-size: 125%;
+	margin-bottom:0.5em;
+}
+section h1 {
+	font-size: 150%;
 	margin-bottom:0.5em;
 }
 
@@ -142,19 +158,6 @@ section h2 {
 
 section > div > div > div {
   padding: 10px;
-}
-
-section > div > div.callout {
-	
-	background: #e0e0e0;
-	
-	-moz-box-shadow: 0px 0px 15px rgba(0,0,0,.75);
-	-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.75);
-	box-shadow: 0px 0px 15px rgba(0,0,0,.75);
-	
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
 }
 
 footer{
@@ -173,6 +176,109 @@ footer{
 
 #controller li:hover {
   background: rgba(0,0,0,.50);
+}
+
+article.about ul.about{
+  list-style-type: none;
+  margin:0;
+}
+  article.about ul.about > li{
+    padding: 25px 0;
+    border-bottom: 5px solid #eee;
+  }
+
+article.about  {
+  font-size: 125%;
+	font-weight: normal;
+}
+
+article.about figure{
+  margin-left: 25px;
+	border: 2px solid #EEE;
+}
+
+em{
+    font-style: normal;
+    color: #a00;
+}
+
+article p {
+    margin: 5px 10px;
+}
+
+/** about page and links **/
+article.aboutlink  {
+  padding:0;
+  background-color: #333;
+}
+article.aboutlink  + article.aboutlink, article.aboutlink.solo {
+  margin-top: 10px;
+}
+article.aboutlink a {
+    padding: 10px;
+    margin:0;
+    display: block;
+    text-decoration: none;
+}
+article.aboutlink a:hover, article.aboutlink a.selfpage{
+      background-color: black;
+}
+article.aboutlink a h1{
+  color:red;
+  padding: 0 10px;
+}
+article.aboutlink a p{
+  color:white;
+}
+
+/** download button **/
+
+a.dlbutton{
+       padding: 10px;
+       margin:10px;
+       width: 300px;
+       display: block;
+       text-align: center;
+       font-weight:bold;
+       border: 1px solid #333;
+       background: #555;
+       background: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ccc));
+       background: -moz-linear-gradient(top,  #eee,  #ccc);
+
+       text-decoration:none;
+       color: red;
+       text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+
+      -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+       -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+       box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+a.dlbutton:active{
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+a.dlbutton:hover{
+   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ddd));
+   background: -moz-linear-gradient(top,  #fff,  #ddd);
+}
+
+figure{
+	background: #fff;
+	border: 1px solid #ccc;
+	margin: 10px 5px;
+	-moz-box-shadow: 3px 3px 5px rgba(128,128,128,.75);
+	 -webkit-box-shadow: 3px 3px 5px rgba(128,128,128,.75);
+	 box-shadow: 3px 3px 5px rgba(128,128,128,.75);
+}
+figure img{
+  margin: 5px;
+}
+figcaption{
+    font-size: 80%;
+
+    margin: 0;
+    padding: 5px 10px;
+    font-style: italic;
 }
 
 /* 

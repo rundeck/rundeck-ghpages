@@ -6,24 +6,25 @@ title: Downloads
 ---
 
 <section id="downloads" class="page">
-    <div class="container_12">
-      <div class="grid_12">
-        <div id="checkback">
+    
+    <article class="container_12 introduction">
+    <div class="grid_12">
+    <p>
+    Download and install RunDeck using these easy install options:
+    </p>
+    </div>
 
-              <p><em>Choose from these easy install options:</em></p>
-
-            </div>
-      </div>
-
-      <div class="clear"></div>
+    <div class="clear"></div>
+    </article>
+    
+    <article class="container_12">
 
     <div class="grid_6">
-        <h3>Self Contained Launcher Install</h3>
-        <div class="callout">
+        <h2>Self Contained Launcher Install</h2>
+        <div>
 
             <p>
-            Download
-            <a class="dllink" href="{{site.rd_jar_url}}">{{site.rd_jar_name}}</a>
+            <a class="dlbutton" href="{{site.rd_jar_url}}">{{site.rd_jar_name}}</a>
             </p>
                 <p>Put it in a directory named <code>~/rundeck</code></p>
                 <p>Execute:</p>
@@ -31,33 +32,41 @@ title: Downloads
 
             </div>
 
+                <h2>Debian/Ubuntu Install</h2>
+
+                <div>
+                    <p>
+
+                        <a class="dlbutton" href="{{site.rd_deb_url}}">{{site.rd_deb_name}}</a>
+                    </p>
+                        <p>Execute:</p>
+                        <div style="margin-left:2em;"><code>dpkg -i {{site.rd_deb_name}}</span></code></div>
+                </div>
           </div>
 
           <div class="grid_6">
-          <h3>Yum RPM Install</h3>
-
-            <div class="callout">
-              <code>rpm -Uvh http://repo.rundeck.org/latest.rpm</code>
-              <br>
-              <code>yum install rundeck</code>
-            </div>
-
-            <h3>Debian/Ubuntu Install</h3>
-
-            <div class="callout">
-                <p>
-                    Download
-                    <a class="dllink" href="{{site.rd_deb_url}}">{{site.rd_deb_name}}</a>
-                </p>
-                <code>dpkg -i {{site.rd_deb_name}}</code>
-            </div>
-
+               
+                 <h2>Release Notes</h2>
+                  <div class="callout">
+                      <p><a class="rd_releasenotes" href="{{site.rd_releasenotes}}">Version {{site.rd_version}}</a></p>
+                  </div>
+                  
+                   <h2><a href="https://github.com/dtolabs/rundeck">Get the Source</a></h2>
+                    <div class="callout">
+                        <p><a class="rd_tarball" href="{{site.rd_tarball}}">.tar.gz</a></p>
+                        <p><a class="rd_zipball" href="{{site.rd_zipball}}">.zip</a></p>
+                    </div>
+                    
+                     <h2>Previous Versions</h2>
+                        <div class="callout">
+                            <a href="https://github.com/dtolabs/rundeck/downloads">Github Downloads</a>
+                      </div>
           </div>
 
           <div class="clear"></div>
 
           <div class="grid_12">
-            <h3>SHA</h3>
+            <h2>SHA</h2>
             <div class="callout">
             <p><a name="launcher_sha"></a>
                 <code>
@@ -75,33 +84,42 @@ title: Downloads
           </div>
 
           <div class="clear"></div>
+          <div class="grid_12">
+                <h2>Yum RPM Install</h2>
+
+                     <p>Execute:</p>
+                     <div style="margin-left:2em;">
+                     <code>rpm -Uvh http://repo.rundeck.org/latest.rpm</code>
+                     <br>
+                     <code>yum install rundeck</code>
+                   </div>
+                   
+                   <h2>Next Steps</h2>
+                       <p>Once you've installed and started the server, visit:
+                       <code>http://localhost:4440</code> </p>
+                       <p>
+                           Check out the <a href="/docs/RunDeck-Guide.html#getting-started">Getting Started</a> section of the RunDeck Guide.
+                           </p>
+                   
+          </div>
+              <div class="clear"></div>
 
           <div class="grid_6">
-              <h3>Release Notes</h3>
-              <div class="callout">
-                  <p><a class="rd_releasenotes" href="{{site.rd_releasenotes}}">Version {{site.rd_version}}</a></p>
-              </div>
+             
           </div>
 
           <div class="clear"></div>
 
           <div class="grid_6">
-              <h3><a href="https://github.com/dtolabs/rundeck">Get the Source</a></h3>
-              <div class="callout">
-                  <p><a class="rd_tarball" href="{{site.rd_tarball}}">.tar.gz</a></p>
-                  <p><a class="rd_zipball" href="{{site.rd_zipball}}">.zip</a></p>
-              </div>
+             
           </div>
 
           <div class="grid_6">
-              <h3>Previous Versions</h3>
-                <div class="callout">
-                    <a href="https://github.com/dtolabs/rundeck/downloads">Github Downloads</a>
-              </div>
+             
           </div>
 
           <div class="clear"></div>
-        </div>
+        </article>
 
 
 </section>

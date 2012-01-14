@@ -1,5 +1,5 @@
 nav {
-  border-bottom-color: #E0E0E0;
+  border-bottom-color: #000;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   height: 50px;
@@ -38,6 +38,7 @@ nav li a:visited {
 
 nav li a:hover {
   color: white;
+  text-decoration:none;
 }
 
 nav li a {

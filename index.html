@@ -5,39 +5,27 @@ title: Open Source Automation
 
 ---
     
-    <section id="introduction" class="page">
-    <div class="container_12">
-    
-      
-    
-      <div id="movies"  class="jcarousel-skin-tango">
-        <ul>
-          <li><a href="downloads.html"><img id="comingsoon" src="images/rundeck640.png" style="width:600px"/></a></li>
-          <li><iframe src="http://player.vimeo.com/video/22902648?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22902648">Introducing Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Introduces ad hoc commands, Jobs, Nodes and history features the Rundeck</p></li>
-          <li><iframe src="http://player.vimeo.com/video/22903167?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22903167">Ad hoc commands in Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Describes how to execute ad hoc commands, any system command or script executed on the filtered remote Nodes</p></li>
-          <li><iframe src="http://player.vimeo.com/video/22903387?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22903387">Running Jobs in Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Describes how to navigate, run, and watch Jobs. Introduces how to manage choices to Job options.</p></li>
-          <li><iframe src="http://player.vimeo.com/video/22903922?byline=0&amp;portrait=0" width="600" height="400" frameborder="0"></iframe><p><a href="http://vimeo.com/22903922">Creating Jobs with Rundeck</a> from <a href="http://vimeo.com/user6885999">Alex Honor</a>.</p><p>Explains how to create Jobs, workflows, and options through the Rundeck GUI</p></li>
-          <li><a href="downloads.html"><img id="comingsoon" src="images/rundeck640.png" style="width:600px"/></a></li>
-        </ul>
-      </div>
-      
-      <div id="controller">
-        <ul>
-          <li><a href="#" onclick="scroll(2)" title="Introducing Rundeck"><img src="images/intro_tb_play.jpg"></a></li>
-          <li><a href="#" onclick="scroll(3)" title="Ad hoc commands in Rundeck"><img src="images/adhoc_tb_play.jpg"></a></li>
-          <li><a href="#" onclick="scroll(4)" title="Running Jobs in Rundeck"><img src="images/running_tb_play.jpg"></a></li>
-          <li><a href="#" onclick="scroll(5)" title="Creating Jobs with Rundeck"><img src="images/create_tb_play.jpg"></a></li>
-        </ul>
-      </div>
-      
+<section class="page" id="index">
+
+{%include rundeckdescription.html %}
+
+</section>
+
+<section>
+<article class="about container_12">
+<div class="grid_12">
+    <div class="jcarousel-skin-tango" id="movies">
+
+    {% include tour-list.html %}
+
     </div>
-    </section>
-    
-    <section>
-    <div class="container_12">
-    RunDeck is cross-platform open source software that helps you automate ad-hoc and routine procedures in data center or cloud environments. RunDeck allows you to run tasks on any number of nodes from a web-based or command-line interface. RunDeck also includes other features that make it easy to scale up your scripting efforts including: access control, workflow building, scheduling, logging, and integration with external sources for node and option data. <a href="docs/RunDeck-Guide.html">Read more in the User Manual...</a>
-    </div>
-    </section>
-    
-    
-  
+</div>
+<div class="clear"></div>
+
+<div class="grid_3 prefix_9">
+    <a href="about.html">More about RunDeck &hellip;</a>
+</div>
+<div class="clear"></div>
+</article>
+</section>
+
