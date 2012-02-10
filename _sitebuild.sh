@@ -14,9 +14,10 @@ fail(){
 
 CUR_VERSION=$1
 CUR_REL=$2
+DL_LOC=${3:-/tmp}
 
 [ -z "$CUR_VERSION" -o -z "$CUR_REL" ] && {
-    errorMsg "Usage: _sitebuild.sh <version> <release>"
+    errorMsg "Usage: _sitebuild.sh <version> <release> [download dir]"
     exit 2
 }
 
@@ -32,21 +33,25 @@ DEB_URL="https://github.com/downloads/dtolabs/rundeck/$DEB_NAME"
 
 CURL_OPTS=""
 
-if [ -f "/tmp/$JAR_NAME" ] ; then
+if [ -f "$DL_LOC/$JAR_NAME" ] ; then
     CURL_OPTS="-z $JAR_NAME"
 fi
 
-pushd /tmp
+pushd $DL_LOC
 
-curl -f -L -o "/tmp/$JAR_NAME" -z "/tmp/$JAR_NAME" $CURL_OPTS $JAR_URL || fail "Unable to download $JAR_URL"
-JAR_SHASUM=$(shasum "/tmp/$JAR_NAME" |cut -d' ' -f1)
-JAR_SIZE=$(stat -f "%z" "/tmp/$JAR_NAME")
-[ -n "$JAR_SHASUM" ] || fail "Unable to find SHASUM: /tmp/$JAR_NAME"
+if [ ! -f "$DL_LOC/$JAR_NAME" ] ; then
+    curl -f -L -o "$DL_LOC/$JAR_NAME" -z "$DL_LOC/$JAR_NAME" $CURL_OPTS $JAR_URL || fail "Unable to download $JAR_URL"
+fi
+JAR_SHASUM=$(shasum "$DL_LOC/$JAR_NAME" |cut -d' ' -f1)
+JAR_SIZE=$(stat -f "%z" "$DL_LOC/$JAR_NAME")
+[ -n "$JAR_SHASUM" ] || fail "Unable to find SHASUM: $DL_LOC/$JAR_NAME"
 
-curl -f -L -o "/tmp/$DEB_NAME" -z "/tmp/$DEB_NAME" $CURL_OPTS $DEB_URL || fail "Unable to download $DEB_URL"
-DEB_SHASUM=$(shasum "/tmp/$DEB_NAME" |cut -d' ' -f1)
-DEB_SIZE=$(stat -f "%z" "/tmp/$DEB_NAME")
-[ -n "$DEB_SHASUM" ] || fail "Unable to find SHASUM: /tmp/$DEB_NAME"
+if [ ! -f "$DL_LOC/$DEB_NAME" ] ; then
+    curl -f -L -o "$DL_LOC/$DEB_NAME" -z "$DL_LOC/$DEB_NAME" $CURL_OPTS $DEB_URL || fail "Unable to download $DEB_URL"
+fi
+DEB_SHASUM=$(shasum "$DL_LOC/$DEB_NAME" |cut -d' ' -f1)
+DEB_SIZE=$(stat -f "%z" "$DL_LOC/$DEB_NAME")
+[ -n "$DEB_SHASUM" ] || fail "Unable to find SHASUM: $DL_LOC/$DEB_NAME"
 
 popd
 
