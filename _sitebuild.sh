@@ -24,10 +24,10 @@ DL_LOC=${3:-/tmp}
 #generate necessary elements
 
 JAR_NAME="rundeck-launcher-$CUR_VERSION.jar"
-JAR_URL="https://github.com/downloads/dtolabs/rundeck/$JAR_NAME"
+JAR_URL="http://download.rundeck.org/jar/$JAR_NAME"
 
 DEB_NAME="rundeck-$CUR_VERSION-$CUR_REL.deb"
-DEB_URL="https://github.com/downloads/dtolabs/rundeck/$DEB_NAME"
+DEB_URL="http://download.rundeck.org/deb/$DEB_NAME"
 
 #download url and calculate SHA hash
 
