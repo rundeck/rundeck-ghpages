@@ -33,10 +33,6 @@ DEB_URL="http://download.rundeck.org/deb/$DEB_NAME"
 
 CURL_OPTS=""
 
-if [ -f "$DL_LOC/$JAR_NAME" ] ; then
-    CURL_OPTS="-z $JAR_NAME"
-fi
-
 pushd $DL_LOC
 
 if [ ! -f "$DL_LOC/$JAR_NAME" ] ; then
