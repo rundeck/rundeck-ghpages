@@ -19,9 +19,6 @@
 [submodule "docs/1.4.3"]
 	path = docs/1.4.3
 	url = git://github.com/dtolabs/rundeck-docs.git
-[submodule "1.4.4"]
-	path = 1.4.4
-	url = git://github.com/dtolabs/rundeck-docs.git
 [submodule "docs/1.4.5"]
 	path = docs/1.4.5
 	url = git://github.com/dtolabs/rundeck-docs.git
