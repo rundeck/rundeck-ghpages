@@ -31,3 +31,6 @@
 [submodule "docs/1.5"]
 	path = docs/1.5
 	url = git://github.com/dtolabs/rundeck-docs.git
+[submodule "docs/latest"]
+	path = docs/latest
+	url = git://github.com/dtolabs/rundeck-docs.git
