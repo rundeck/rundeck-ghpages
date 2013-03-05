@@ -231,9 +231,9 @@ article.aboutlink a p{
   color:white;
 }
 
-article ul.meta {
+ul.meta {
   padding: 2px 0;
-  list-style-type: disc outside none;
+  list-style-type: none;
 }
 
 .btn {
