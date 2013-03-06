@@ -1,0 +1,43 @@
+#
+# targets:
+#
+# release: uploads artifacts, regenerates site
+#
+# "upload": uploads artifacts to s3 from a local directory, based on version number
+#
+# "list": generates markdown files for downloads listing pages based on contents of s3 buckets
+#
+# "site": runs _sitebuild.sh to generate jekyll data for the site
+#
+
+
+.PHONY: site list upload release
+
+DLDIR=download/
+
+release: upload list site
+
+
+list:
+	for i in deb rpm jar ; do \
+	s3cmd ls s3://download.rundeck.org/$${i}/ | grep  -e "\.$${i}" | sort -r > _$${i}.list ; \
+	sort -r _$${i}.list | perl _list.pl  "-BASE=http://download.rundeck.org/$${i}/" > $(DLDIR)$${i}/_list.md ; \
+	cat $(DLDIR)$${i}/_index.md $(DLDIR)$${i}/_list.md > $(DLDIR)$${i}/index.md ; \
+	done
+
+upload:
+	echo $(DIR)/release-$(VERSION)
+	[ -d "$(DIR)/release-$(VERSION)" ] || ( echo "DIR and VERSION required " ; false )
+	echo "Uploading rundeck-launcher..."
+	s3cmd put $(DIR)/release-$(VERSION)/rundeck-launcher-$(VERSION).jar s3://download.rundeck.org/jar/
+	echo "Uploading rundeck rpms..."
+	s3cmd put $(DIR)/release-$(VERSION)/rundeck-$(VERSION)*.rpm s3://download.rundeck.org/rpm/
+	s3cmd put $(DIR)/release-$(VERSION)/rundeck-config-$(VERSION)*.rpm s3://download.rundeck.org/rpm/
+	echo "Uploading rundeck-deb..."
+	s3cmd put $(DIR)/release-$(VERSION)/rundeck-$(VERSION)*.deb s3://download.rundeck.org/deb/
+
+site:
+	echo $(DIR)/release-$(VERSION) release $(REL)
+	[ -d "$(DIR)/release-$(VERSION)" ] || ( echo "DIR and VERSION required " ; false )
+	[ -n "$(REL)" ] || ( echo "REL required " ; false )
+	sh _sitebuild.sh $(VERSION) $(REL) $(DIR)
