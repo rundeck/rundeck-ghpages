@@ -1,0 +1,230 @@
+--- 
+
+layout: base
+title: Plugins
+
+---
+
+<section id="plugins" class="page">
+  
+  <article class="container_12 introduction">
+    <div class="grid_12">
+      <p>
+        This is a directory describing plugins that either extend Rundeck or plugins or services
+        that allow other tools to integrate with Rundeck. 
+        <b>Need a plugin?</b>
+        Please <a href="http://groups.google.com/group/rundeck-discuss">write to us</a>
+        about any plugin you wish was here.
+        Interested in your own plugin appearing here?  Take a look at the Publishing Plugins Guide.
+          </p>
+      </p>
+    </div>
+
+    <div class="clear"></div>
+  </article>
+  
+  <article class="container_12">
+	<div class="grid_6">
+
+      <article class="plugin">
+        <header>
+          <h3>AWS EC2 Nodes </h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              aws
+            </li>
+            <li>
+              <span>Provides :</span>
+              <a href="http://rundeck.org/docs/manual/plugins.html#resource-model-source-plugins">Resource Model Source</a>
+            </li>
+            <li>
+              Latest : <strong>1.0.0.M5</strong>                            
+            </li>
+            <li>Last Updated: <strong>08 November 2012</strong></li>
+            <li>
+              Rundeck version : 1.5 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>This plugin contains a Resource Model Source provider that returns Amazon EC2 Instances as nodes to the RunDeck server.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="http://download.rundeck.org/plugins/rundeck-ec2-nodes-plugin" class="btn blueLight doc"><span class="ico"></span>Download</a>
+          <a href="https://github.com/gschueler/rundeck-ec2-nodes-plugin" class="btn blueLight source"><span class="ico"></span>Source</a>
+          <a href="https://github.com/gschueler/rundeck-ec2-nodes-plugin/issues" class="btn blueLight issues"><span class="ico"></span>Issues</a>
+        </p>
+      </article>	
+
+      <article class="plugin">
+        <header>
+          <h3>Bamboo-Rundeck</h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              bamboo
+            </li>
+            <li>
+              <span>External plugin</span>
+            </li>
+            <li>
+              API version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>This Bamboo Plugin supports Bamboo tasks for extending Continuous Integration build plans into a Continuous Delivery solution.  For more information, see Rundeck, the process automation and command orchestration tool.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="https://github.com/connaryscott/bamboo-rundeck-plugin/wiki" class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+
+      <article class="plugin">
+        <header>
+          <h3>Chef Nodes </h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              chef
+            </li>
+            <li>
+              <span>Web service :</span>
+              <a href="http://rundeck.org/docs/manual/plugins.html#url-resource-model-source-configuration">URL Resource Model Source</a>
+            </li>
+            <li>
+              Rundeck version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>Use this web service to provide Chef node data to Rundeck projects. Set up the web service and then
+           configure your project to access the Chef data via Rundeck's built-in  
+            <a href="http://rundeck.org/docs/manual/plugins.html#url-resource-model-source-configuration">URL Resource Model Source</a>.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="https://github.com/rundeck-plugins/chef-nodes" class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+
+      <article class="plugin">
+        <header>
+          <h3>Jenkins-Rundeck</h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              jenkins
+            </li>
+            <li>
+              <span>External plugin</span>
+            </li>
+            <li>
+              API version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>This plugin is a Notifier that will talk to a RunDeck instance (via its HTTP API) to schedule a job execution on RunDeck after a successful build on Jenkins. It is also a Trigger that will schedule a build on Jenkins after a job execution on RunDeck (using RunDeck WebHook Notification). In addition, it turns Jenkins into an <a href="http://rundeck.org/docs/RunDeck-Guide.html#option-model-provider">Option provider</a> for RunDeck, if you want to use your Jenkins build artifacts as an option to a RunDeck job.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="https://wiki.jenkins-ci.org/display/JENKINS/RunDeck+Plugin" class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+
+      <article class="plugin">
+        <header>
+          <h3>Puppet Nodes </h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              puppet
+            </li>
+            <li>
+             <span>Web service</span>
+            </li>
+            <li>
+              Rundeck version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>Use this web service to provide Puppet node data to Rundeck projects. Set up the web service and then
+           configure your project to access the Puppet data via Rundeck's built-in <a href="http://rundeck.org/docs/manual/plugins.html#url-resource-model-source-configuration">URL Resource Model Source</a>.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="https://github.com/rundeck-plugins/puppet-nodes" class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+
+     <article class="plugin">
+        <header>
+          <h3>Puppet MCollective Nodes </h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              puppet
+            </li>
+            <li>
+             <span>Plugin:</span> Resource Model Source Provider Script
+            </li>
+            <li>
+              Rundeck version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>A script based mcollective node resource provider employing the mcollective mco uility.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="https://github.com/connaryscott/rundeck-mcollective-nodes" class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+
+
+      <article class="plugin">
+        <header>
+          <h3>WinRM Node Executor </h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              windows
+            </li>
+            <li>
+              <span>Provides :</span>
+              Node Executor
+            </li>
+            <li>
+              Latest : <strong>1.0.0.M5</strong>                            
+            </li>
+            <li>Last Updated: <strong>08 November 2012</strong></li>
+            <li>
+              Rundeck version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>This plugin provides a Node Executor to execute commands over WinRM.
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="http://download.rundeck.org/rundeck-plugins/winrm-executor" class="btn blueLight doc"><span class="ico"></span>Download</a>
+          <a href="https://github.com/dtolabs/rundeck-winrm-plugin" class="btn blueLight source"><span class="ico"></span>Source</a>
+          <a href="https://github.com/dtolabs/rundeck-winrm-plugin/issues" class="btn blueLight issues"><span class="ico"></span>Issues</a>
+        </p>
+      </article>	
+
+	</div>
+
+	<div class="clear"></div>
+  </article>
+
+
+</section>
+
