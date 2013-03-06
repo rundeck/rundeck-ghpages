@@ -15,7 +15,7 @@ title: Plugins
         <b>Need a plugin?</b>
         Please <a href="http://groups.google.com/group/rundeck-discuss">write to us</a>
         about any plugin you wish was here.
-        Interested in your own plugin appearing here?  Take a look at the <a href="plugins-guide.html">Publishing Plugins Guide</a>.
+        Interested in your own plugin appearing here?  Take a look at the <a href="plugins-guide.html">Plugin Publishing Guide</a>.
       </p>
       <p>Rundeck can integrate with tools in several manners:</p>
       <ol>
@@ -47,10 +47,12 @@ title: Plugins
               <span>Rundeck Plugin:</span>
               <a href="http://rundeck.org/docs/manual/plugins.html#resource-model-source-plugins">Resource Model Source</a>
             </li>
+            <!--
             <li>
               Latest : <strong>1.0.0.M5</strong>                            
             </li>
             <li>Last Updated: <strong>08 November 2012</strong></li>
+            -->
             <li>
               Rundeck version : 1.5 +
             </li>
@@ -84,7 +86,7 @@ title: Plugins
           </ul>
         </header>
         <div class="desc">
-          <p>This Bamboo Plugin supports Bamboo tasks for extending Continuous Integration build plans into a Continuous Delivery solution.  For more information, see Rundeck, the process automation and command orchestration tool.
+          <p>This Bamboo Plugin supports Bamboo tasks for extending Continuous Integration build plans into a Continuous Delivery solution. 
           </p>
         </div>
         <p class="buttons">          
@@ -142,6 +144,38 @@ title: Plugins
         </div>
         <p class="buttons">          
           <a href="https://wiki.jenkins-ci.org/display/JENKINS/RunDeck+Plugin" class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+
+     <article class="plugin">
+        <header>
+          <h3>Nexus-Rundeck</h3>          
+          <ul class="meta">
+            <li>
+              <span>Category :</span>
+              nexus
+            </li>
+            <li>
+              <span>External Plugin: </span> Nexus
+            </li>
+            <li>
+              API version : 1.3 +
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p>This is a Nexus plugin that provides an "Option provider" for RunDeck.
+            The plugin provides the following new HTTP resources :
+          </p>
+          <p>
+          <ul>
+           <li> http://NEXUS_HOST/service/local/rundeck/options/version : return a json array with the version of the matching artifacts.</li>
+           <li> http://NEXUS_HOST/service/local/rundeck/options/artifactId : return a json array with the artifactId of the matching artifacts. </li>           
+          </ul>
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="https://github.com/vbehar/nexus-rundeck-plugin" class="btn blueLight source"><span class="ico"></span>Project</a>
         </p>
       </article>	
 
@@ -209,10 +243,12 @@ title: Plugins
             <li>
               <span>Rundeck Plugin:</span> Node Executor
             </li>
+            <!--
             <li>
               Latest : <strong>1.0.0.M5</strong>                            
             </li>
             <li>Last Updated: <strong>08 November 2012</strong></li>
+            -->
             <li>
               Rundeck version : 1.3 +
             </li>
