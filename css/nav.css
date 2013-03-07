@@ -68,3 +68,9 @@ nav li.selected{
 	border-top: 3px solid red;
 	background: rgba(0,0,0,.50);
 }
+
+/* search box */
+.searchbox {
+  margin: 10px 0 10px 0;
+  text-align: right;
+}
