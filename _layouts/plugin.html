@@ -1,0 +1,54 @@
+---
+
+layout: base
+
+---
+
+
+<section id="plugins" class="page">
+
+  <article class="container_12 introduction">
+    <div class="grid_12">
+      <p>
+      <strong><a href="/plugins">Back to Plugins List  &larr;</a></strong>
+      </p>
+    </div>
+    <div class="clear"></div>
+
+  </article>
+
+    <article class="container_12">
+
+     <article class="plugin">
+        <header>
+          <h3>{{ page.title }} </h3>          
+          <ul class="meta">
+
+            <li>
+              <strong><em>{{ page.integration }}</em></strong>
+            </li>
+            {{% if page.service  != null %}}
+            <li>
+              <span>Related to:</span> <em> {{ page.service }} </em>
+            </li>
+            {{% endif %}}
+            <li>
+              <span>Rundeck compatible:</span> <em>{{ page.rundeck_version }}</em>
+            </li>
+            <li>
+              <span>Tags:</span> <em>{{ page.tags | join:', ' }}</em>
+       
+            </li>
+          </ul>
+        </header>
+        <div class="desc">
+          <p> {{ page.content }} 
+          </p>
+        </div>
+        <p class="buttons">          
+          <a href="{{ page.project_url }} " class="btn blueLight source"><span class="ico"></span>Project</a>
+        </p>
+      </article>	
+    </article>
+</selection>
+
