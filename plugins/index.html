@@ -39,9 +39,9 @@ title: Plugins
       {% for post in site.posts %}
           <h2><a href="{{ post.url }}">{{ post.title }} </a></h2>   
           <em>{{ post.integration }}</em>
-
-           {{ post.content }}
-
+          <p>
+           {{ post.description }}
+          </p>
         {% endfor %}
 
  

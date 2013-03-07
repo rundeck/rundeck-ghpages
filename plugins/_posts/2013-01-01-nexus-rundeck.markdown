@@ -7,10 +7,10 @@ service: OptionProvider
 rundeck_version: 1.3+
 project_url: https://github.com/vbehar/nexus-rundeck-plugin
 integration: External Plugin
-
+description: This Nexus plugin turns Nexus into an <a href="http://rundeck.org/docs/RunDeck-Guide.html#option-model-provider">Option provider</a> for RunDeck.
 ---
 
-This Nexus plugin turns Nexus into an <a href="http://rundeck.org/docs/RunDeck-Guide.html#option-model-provider">Option provider</a> for RunDeck, if you want to use your Nexus artifacts as an option to a RunDeck job. The plugin provides the following new HTTP resources:
+If you want to use your Nexus artifacts as an option to a RunDeck job. The plugin provides the following new HTTP resources:
 <ul>
 <li> http://NEXUS_HOST/service/local/rundeck/options/version: return a json array with the version of the matching artifacts.</li>
 <li> http://NEXUS_HOST/service/local/rundeck/options/artifactId: return a json array with the artifactId of the matching artifacts.</li>
