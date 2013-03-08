@@ -136,6 +136,16 @@ article{
 	
 }
 
+.callout{
+  background-color: #eee;
+  padding: 6px;
+  margin: 20px 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  
+}
+
 
 section h3 {
 	font-size: 150%;
@@ -234,6 +244,12 @@ article.aboutlink a p{
 ul.meta {
   padding: 2px 0;
   list-style-type: none;
+}
+ul.meta li span{
+
+}
+ul.meta li span+em{
+  font-family: monospace;
 }
 
 .btn {
@@ -346,6 +362,49 @@ figcaption{
     font-style: italic;
 }
 
+/* plugin specific */
+
+ul.plugins{
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.plugins li{
+  margin: 10px;
+  padding: 10px;
+}
+ul.plugins li + li {
+  border-top: 1px solid #DDD;
+}
+ul.plugins li h2{
+  display: inline;
+}
+ul.plugins li .integration{
+  font-weight: normal;
+  color: #CCC;
+  display: block;
+}
+
+article.plugin{
+  padding: 0;
+}
+article.plugin header{
+  /*border-bottom: 1px solid #DDD;*/
+  padding: 10px;
+
+}
+article.plugin header h3{
+
+}
+article.plugin .body{
+  padding: 25px;
+}
+article.plugin .body .callout{
+  margin:0;
+}
+
+article.plugin .buttons{
+  margin: 25px 0;
+}
 /* 
  * print styles
  * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 

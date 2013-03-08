@@ -12,16 +12,25 @@ title: Plugins
       <p>
         This directory lists plugins that either extend Rundeck or plugins or services
         that allow other tools to integrate with Rundeck. 
+      </p>
+      <div class="callout">
+        <ul>
+        <li>
         <b>Need a plugin?</b>
         Please <a href="http://groups.google.com/group/rundeck-discuss">write to us</a>
         about any plugin you wish was here.
-        Interested in your own plugin appearing here?  Take a look at the <a href="guide.html">Plugin Publishing Guide</a>.
-      </p>
+      </li>
+      <li>
+        <b>Have a plugin?</b>
+        Want your plugin to appear here?  Take a look at the <a href="guide.html">Plugin Publishing Guide</a>.
+      </li>
+      </ul>
+      </div>
       <p>Rundeck can integrate with tools in several manners:</p>
       <ol>
-        <li> Rundeck Plugin. A Rundeck plugin implemented in Java or shell script, installed into a Rundeck server.</li>
-        <li> External Service. An external service that is used by a Rundeck plugin or the Rundeck core.</li>
-        <li> External Plugin. A plugin installed in another tool that interacts with Rundeck through its <a href="http://rundeck.org/docs/api/index.html">API</a>.</li>
+        <li> <em>Rundeck Plugin</em>. A Rundeck plugin implemented in Java or shell script, installed into a Rundeck server.</li>
+        <li> <em>External Service</em>. An external service that is used by a Rundeck plugin or the Rundeck core.</li>
+        <li> <em>External Plugin</em>. A plugin installed in another tool that interacts with Rundeck through its <a href="http://rundeck.org/docs/api/index.html">API</a>.</li>
       </ol>
     </div>
 
@@ -34,18 +43,25 @@ title: Plugins
 
   <article class="container_12">
 
-	<div class="grid_12">
-
+	
+<div class="grid_12">
+  <ul class="plugins">
       {% for post in site.posts %}
-          <h2><a href="{{ post.url }}">{{ post.title }} </a></h2>   
-          <em>{{ post.integration }}</em>
+  <li >
+          <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+          </a>
+          <span class="integration">{{ post.integration }}</span>
+
+          
           <p>
            {{ post.description }}
           </p>
+</li>
         {% endfor %}
-
+      </ul>
+  </div>
  
-	</div>
     <div class="clear"></div>
 
   </article>
