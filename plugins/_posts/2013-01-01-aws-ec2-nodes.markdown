@@ -1,5 +1,6 @@
 ---
 layout: plugin
+category: plugins
 title: AWS EC2 Nodes
 tags: [AWS]
 service: ResourceModelSource

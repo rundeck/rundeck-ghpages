@@ -1,0 +1,47 @@
+--- 
+
+layout: base
+title: News
+
+---
+
+<section id="about" class="page">
+  
+  <article class="container_12 introduction">
+    <div class="grid_12">
+      <p>
+        News and Announcements
+      </p>
+    </div>
+
+    <div class="clear"></div>
+
+  </article>
+
+
+  <article class="container_12">
+	
+    <div class="grid_12">
+      <ul class="plugins">
+        {% for post in site.categories.news %}
+        <li >
+          <span class="integration">{{post.date|date_to_string}}</span>
+          <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+          </a>
+          
+          <p>
+            {{ post.description }}
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="clear"></div>
+
+  </article>
+
+
+</section>
+

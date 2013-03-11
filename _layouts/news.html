@@ -1,0 +1,38 @@
+---
+
+layout: base
+
+---
+
+
+<section id="news" class="page container_12">
+
+<div class="grid_12">
+  <article class=" introduction">
+    
+      <p>
+      <strong><a href="/news">Back to News  &larr;</a></strong>
+      </p>
+
+  </article>
+
+
+   <article class="plugin">
+
+        <header>
+          <h3>{{ page.title }} </h3>     
+        </header>
+        <div class="body">
+          <span style="color:#808080;font-size:smaller;">Submitted by: {{page.author}} | Published: {{page.date|date_to_string}}</span>
+
+          <div class="desc">
+            <p> {{ page.content }} 
+            </p>
+          </div>
+        </div>
+      </article>	
+
+    </div>
+    <div class="clear"></div>
+</section>
+
