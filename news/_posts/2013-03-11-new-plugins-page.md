@@ -1,6 +1,6 @@
 ---
 layout: news
-title: New Plugins page.
+title: Check out the new Plugins page.
 categories: [news]
 author: <a href="http://about.me/alexhonor">Alex Honor</a>
 ---
