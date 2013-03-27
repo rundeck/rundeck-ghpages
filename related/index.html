@@ -1,0 +1,73 @@
+--- 
+
+layout: base
+title: Plugins
+
+---
+
+<section id="about" class="page">
+  
+  <article class="container_12 introduction">
+    <div class="grid_12">
+      <strong>
+        Related projects.
+      </strong>
+      <div class="callout">
+        <p>None of the projects listed here are directly supported by the Rundeck developers.
+          If you encounter any problems with them, please use the contact information.</p>
+      </div>
+      <p>
+        Please <a href="http://groups.google.com/group/rundeck-discuss">
+          write to us</a> about any project you wish was listed here.
+      </p>
+      <div class="clear"></div>
+
+
+  </article>
+
+
+  <article class="container_12">
+
+	
+    <div class="grid_12">
+      <ul class="plugins">
+        {% for post in site.categories.related %}
+        <li>
+          <h2>{{ post.title }}</h2>          
+          <p>
+            {{ post.description }}
+          </p>
+          <p>
+            {{ post.content }}
+          </p>
+          <table width="75%">
+            <tr>
+              <th>Contact</th><td> {{ post.contact }}</td>
+            </tr>
+            <tr>
+              <th>Compatability</th><td> {{ post.rundeck_version }}</td>
+            </tr>
+           <tr>
+              <th>URL</th><td> {{ post.project_url }}</td>
+            </tr>
+           <tr>
+              <th>License</th><td> {{ post.license }}</td>
+            </tr>
+           <tr>
+              <th>Date</th><td> {{ post.date | date_to_string }}</td>
+            </tr>
+          </table>
+          <p>
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="clear"></div>
+
+  </article>
+
+
+</section>
+
