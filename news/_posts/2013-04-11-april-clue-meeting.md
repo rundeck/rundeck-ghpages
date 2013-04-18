@@ -5,16 +5,18 @@ categories: [news]
 author: <a href="http://about.me/alexhonor">Alex Honor</a>
 ---
 
-<p>Will Sterling gave a presentation introducing Rundeck at the April Clue Meeting.</p>
+<p class="lead">Will Sterling gave a presentation introducing Rundeck at the April Clue Meeting.</p>
 <p>
-If you are new to Rundeck, <a img="http://vimeo.com/63795340">watch Will Sterling give an 
+If you are new to Rundeck, <a href="http://vimeo.com/63795340">watch Will give an 
 introduction</a> to what Rundeck can do and how he uses it to automate
 work at DataLogix.
 </p>
 <p>Here are some notable quotes:</p>
 <ul>
 <li>
+<blockquote>
 "Multi-tentant command orchestration and process automation with WebGUI, CLI, and RESTful API."
+</blockquote>
 </li>
 <li>
 "Target nodes with rich metadata. Never use hostnames again."
