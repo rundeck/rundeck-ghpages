@@ -19,7 +19,7 @@ release: upload list site
 
 
 list:
-	for i in deb rpm jar ; do \
+	for i in deb rpm jar war ; do \
 	s3cmd ls s3://download.rundeck.org/$${i}/ | grep  -e "\.$${i}" | sort -r > _$${i}.list ; \
 	sort -r _$${i}.list | perl _list.pl  "-BASE=http://download.rundeck.org/$${i}/" > $(DLDIR)$${i}/_list.md ; \
 	cat $(DLDIR)$${i}/_index.md $(DLDIR)$${i}/_list.md > $(DLDIR)$${i}/index.md ; \
@@ -35,6 +35,9 @@ upload:
 	s3cmd put $(DIR)/release-$(VERSION)/rundeck-config-$(VERSION)*.rpm s3://download.rundeck.org/rpm/
 	echo "Uploading rundeck-deb..."
 	s3cmd put $(DIR)/release-$(VERSION)/rundeck-$(VERSION)*.deb s3://download.rundeck.org/deb/
+	echo "Uploading rundeck-war..."
+	s3cmd put $(DIR)/release-$(VERSION)/rundeck-$(VERSION).war s3://download.rundeck.org/war/
+
 
 site:
 	echo $(DIR)/release-$(VERSION) release $(REL)
