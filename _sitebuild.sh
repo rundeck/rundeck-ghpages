@@ -46,7 +46,8 @@ if [ ! -f "$DL_LOC/$DEB_NAME" ] ; then
     curl -f -L -o "$DL_LOC/$DEB_NAME" -z "$DL_LOC/$DEB_NAME" $CURL_OPTS $DEB_URL || fail "Unable to download $DEB_URL"
 fi
 DEB_SHASUM=$(shasum "$DL_LOC/$DEB_NAME" |cut -d' ' -f1)
-DEB_SIZE=$(stat -f "%z" "$DL_LOC/$DEB_NAME")
+DEB_SIZE=$(stat -c "%s" "$DL_LOC/$DEB_NAME")
+#DEB_SIZE=$(stat -f "%z" "$DL_LOC/$DEB_NAME")
 [ -n "$DEB_SHASUM" ] || fail "Unable to find SHASUM: $DL_LOC/$DEB_NAME"
 
 cd -
