@@ -39,14 +39,16 @@ if [ ! -f "$DL_LOC/$JAR_NAME" ] ; then
     curl -f -L -o "$DL_LOC/$JAR_NAME" -z "$DL_LOC/$JAR_NAME" $CURL_OPTS $JAR_URL || fail "Unable to download $JAR_URL"
 fi
 JAR_SHASUM=$(shasum "$DL_LOC/$JAR_NAME" |cut -d' ' -f1)
-JAR_SIZE=$(stat -f "%z" "$DL_LOC/$JAR_NAME")
+JAR_SIZE=$(stat -c "%s" "$DL_LOC/$JAR_NAME")
 [ -n "$JAR_SHASUM" ] || fail "Unable to find SHASUM: $DL_LOC/$JAR_NAME"
 
 if [ ! -f "$DL_LOC/$DEB_NAME" ] ; then
     curl -f -L -o "$DL_LOC/$DEB_NAME" -z "$DL_LOC/$DEB_NAME" $CURL_OPTS $DEB_URL || fail "Unable to download $DEB_URL"
 fi
 DEB_SHASUM=$(shasum "$DL_LOC/$DEB_NAME" |cut -d' ' -f1)
+#gnu stat
 DEB_SIZE=$(stat -c "%s" "$DL_LOC/$DEB_NAME")
+#bsd stat
 #DEB_SIZE=$(stat -f "%z" "$DL_LOC/$DEB_NAME")
 [ -n "$DEB_SHASUM" ] || fail "Unable to find SHASUM: $DL_LOC/$DEB_NAME"
 
