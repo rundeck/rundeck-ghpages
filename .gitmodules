@@ -40,3 +40,6 @@
 [submodule "1.5.2"]
 	path = 1.5.2
 	url = git://github.com/dtolabs/rundeck-docs.git
+[submodule "1.5.3"]
+	path = 1.5.3
+	url = git://github.com/dtolabs/rundeck-docs.git
