@@ -8,7 +8,7 @@ integration: Rundeck Plugin
 description: Rundeck notification plugin - sends job notification messages to a HipChat room.
 ---
 
-Project URL: https://github.com/hbakkum/rundeck-hipchat-plugin
 Download URL: http://search.maven.org/#search%7Cga%7C1%7Crundeck-hipchat-plugin
+
 Version: Plugin version is 1.0.0 - tested on Rundeck 1.5.3
 
