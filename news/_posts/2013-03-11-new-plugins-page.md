@@ -2,6 +2,7 @@
 layout: news
 title: Check out the new Plugins page.
 categories: [news]
+comments: true
 author: <a href="http://about.me/alexhonor">Alex Honor</a>
 ---
 
