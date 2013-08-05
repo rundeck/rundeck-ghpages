@@ -1,0 +1,12 @@
+---
+layout: plugin
+title: Salt Step
+tags: [nodexecutor,salt]
+rundeck_version: 1.5.3+
+service: NodeStepPlugin
+project_url: https://github.com/rundeck-plugins/salt-step
+integration: Rundeck Plugin
+description: A Rundeck NodeStepPlugin that allows Rundeck to delegate tasks to a Salt master by executing the request over salt-api.
+version: 1.0.0
+---
+
