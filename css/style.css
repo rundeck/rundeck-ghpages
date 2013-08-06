@@ -219,6 +219,10 @@ article p {
     margin: 5px 10px;
 }
 
+article strong {
+    margin: 5px 10px;
+}
+
 /** about page and links **/
 article.aboutlink  {
   padding:0;
