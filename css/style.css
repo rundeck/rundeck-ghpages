@@ -353,9 +353,9 @@ a.dlbutton:hover{
 /**  Large Button **/
 
 a.button-large{
-       padding: 15px;
+       padding: 12px;
        margin:10px;
-       width: 250px;
+       width: 225px;
        margin: 0px auto;
        display: block;
        text-align: center;
@@ -363,7 +363,7 @@ a.button-large{
        font-size: 20px;
        text-shadow: none;
        border: 1px;
-       border-radius: 25px;
+       border-radius: 30px;
        background: red;
        text-decoration:none;
        color: white;
