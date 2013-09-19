@@ -359,9 +359,9 @@ a.dlbutton:hover{
 /**  Large Button **/
 
 a.button-large{
-       padding: 12px;
-       margin:10px;
-       width: 225px;
+       padding: 10px;
+       margin: 10px;
+       width: 200px;
        margin: 0px auto;
        display: block;
        text-align: center;
@@ -380,7 +380,7 @@ a.button-large:active{
    box-shadow: none;
 }
 a.button-large:hover{
-   background: #b20000;
+   background: rgb(201, 34, 34);
 }
 
 figure{
