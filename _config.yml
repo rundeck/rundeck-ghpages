@@ -1,5 +1,5 @@
-baseurl: ""
-url: ""
+baseurl: "http://damonedwards.github.io/rundeck-ghpages-damon"
+url: "http://damonedwards.github.io/rundeck-ghpages-damon"
 rd_version: "1.6.0"
 rd_jar_name: "rundeck-launcher-1.6.0.jar"
 rd_jar_sha: "b3b6466b52ce3d9bcecbc2649ccd7fedef5b32f0"
