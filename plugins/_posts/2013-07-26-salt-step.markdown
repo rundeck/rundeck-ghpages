@@ -10,3 +10,4 @@ description: A Rundeck NodeStepPlugin that allows Rundeck to delegate tasks to a
 version: 1.0.0
 ---
 
+Download here: https://github.com/rundeck-plugins/salt-step/releases
