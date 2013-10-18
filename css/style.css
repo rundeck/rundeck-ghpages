@@ -412,6 +412,15 @@ article.plugin .body .callout{
 article.plugin .buttons{
   margin: 25px 0;
 }
+
+/* for stacking text on top of a font awesome icon */
+.icon-notanicon {
+        font-family: Arial, Helvetica, Geneva, SansSerif;
+        font-weight: bold;
+        font-size: 250%;
+}
+
+
 /* 
  * print styles
  * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 

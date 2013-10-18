@@ -34,7 +34,7 @@ Download: <a href="http://rundeck.org/downloads.html">Rundeck 1.6.0</a>
 <br>
 <p>“Rundeck users are generally solving a last-mile type problem” says SimplifyOps Co-Founder, Damon Edwards. “They have procedures automated to the point where they themselves can run a series of scripts or commands to execute a task when requested of them. But being the only ones who can fulfill that request is time consuming and turns them into the bottleneck slowing down the organization. So these users started using Rundeck to turn those procedures into repeatable and secure self-service jobs. They are pioneering Operations as a Service.”</p>
 <br>
-<p>Rundeck is a fully open source product available under the Apache 2.0 license. Rundeck users and/or contributors include: Adobe, Data.com, Ticketmaster, Omgeo, Disney, Fidelity, and Salesforce.com.</p>
+<p>Rundeck is a fully open source product available under the Apache 2.0 license. Rundeck users and/or contributors include: Adobe, Data.com, Ticketmaster, Omgeo, Disney, Fidelity, Salesforce.com, Pearson, Nespresso, AARP, Backcountry.com, and Bol.com</p>
 <br>
 <p>To read the most recent Rundeck case study featuring Data.com, please visit: <a href="http://rundeck.org/stories">http://rundeck.org/stories</a></p>
 
