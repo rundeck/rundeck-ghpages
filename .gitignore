@@ -1,3 +1,6 @@
 _site
 *.list
 download/*/_list.md
+*/.DS_Store
+.DS_Store
+.DS_Store?

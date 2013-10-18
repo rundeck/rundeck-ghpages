@@ -5,7 +5,7 @@ title: Open Source Workflow Automation
 
 ---
     
-<section class="page" id="index">
+<section>
 
 {%include rundeckdescription.html %}
 
@@ -13,19 +13,26 @@ title: Open Source Workflow Automation
 
 <section>
 <article class="about container_12">
-<div class="grid_12">
+	<p>Latest Rundeck News</p>
+	<ul style="margin-bottom:25px; list-style-type:none;">
+  {% for post in site.categories.news limit:3 %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+ <!--
     <div class="jcarousel-skin-tango" id="movies">
 
     {% include tour-list.html %}
 
     </div>
-</div>
-<div class="clear"></div>
+-->
+<section>
+{%include rundeckdescription-lower.html %}
+</section>
 
-<div class="grid_3 prefix_9">
-    <a href="about.html">More about Rundeck &hellip;</a>
-</div>
-<div class="clear"></div>
 </article>
 </section>
 

@@ -121,11 +121,17 @@ body {
 
 #index {
 }
-  article.introduction {
+
+article.introduction {
   background-color: #dedede;
          text-shadow: -1px -1px 2px rgba(255,255,255,0.8);
-  
   }
+
+
+article.background-gray {
+  background-color: #dedede;
+  }
+
 section {
 	text-align: left;
 }
@@ -147,13 +153,12 @@ article{
 }
 
 section h4 {
-  font-size: 115%;
+  font-size: 120%;
 }
 
 section h3 {
 	font-size: 150%;
 	line-height: 100%;
-	font-weight:normal;
   margin: 0 10px 5px 10px;
 }
 section h2 {
@@ -161,8 +166,8 @@ section h2 {
 	margin-bottom:0.5em;
 }
 section h1 {
-	font-size: 175%;
-	margin: 0 10px 5px 10px;
+  font-size: 200%;
+  margin: 0 10px 5px 10px;
 }
 
 #checkback {
@@ -213,6 +218,10 @@ article.about figure{
 em{
     font-style: normal;
     color: #a00;
+}
+
+.centered {
+    text-align: center;    
 }
 
 article p {
@@ -323,7 +332,6 @@ ul.meta li span+em{
 
 a.dlbutton{
        padding: 10px;
-       margin:10px;
        width: 300px;
        display: block;
        text-align: center;
@@ -348,6 +356,33 @@ a.dlbutton:active{
 a.dlbutton:hover{
    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ddd));
    background: -moz-linear-gradient(top,  #fff,  #ddd);
+}
+
+/**  Large Button **/
+
+a.button-large{
+       padding: 10px;
+       margin: 10px;
+       width: 200px;
+       margin: 0px auto;
+       display: block;
+       text-align: center;
+       font-weight:bold;
+       font-size: 20px;
+       text-shadow: none;
+       border: 1px;
+       border-radius: 30px;
+       background: red;
+       text-decoration:none;
+       color: white;
+       
+}
+a.button-large:active{
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+a.button-large:hover{
+   background: rgb(201, 34, 34);
 }
 
 figure{
