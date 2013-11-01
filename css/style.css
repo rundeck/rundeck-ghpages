@@ -122,13 +122,15 @@ body {
 #index {
 }
 
-article.introduction {
+.introduction {
   background-color: #dedede;
          text-shadow: -1px -1px 2px rgba(255,255,255,0.8);
+         padding-top:25px;
+  padding-bottom:25px;
   }
 
 
-article.background-gray {
+.background-gray {
   background-color: #dedede;
   }
 
@@ -137,8 +139,6 @@ section {
 }
 article{
 	background-color: #fff;
-	padding-top:25px;
-	padding-bottom:25px;
 	
 }
 
@@ -158,16 +158,20 @@ section h4 {
 
 section h3 {
 	font-size: 150%;
-	line-height: 100%;
-  margin: 0 10px 5px 10px;
+	/*line-height: 100%;*/
+  margin: 10px 10px 10px 0;
 }
 section h2 {
-	font-size: 125%;
+	font-size: 175%;
 	margin-bottom:0.5em;
 }
 section h1 {
   font-size: 200%;
-  margin: 0 10px 5px 10px;
+ margin: 10px 10px 10px 0;
+}
+section ul, section ol{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #checkback {
@@ -224,9 +228,6 @@ em{
     text-align: center;    
 }
 
-article p {
-    margin: 5px 10px;
-}
 
 article strong {
     margin: 5px 10px;
@@ -404,6 +405,10 @@ figcaption{
     font-style: italic;
 }
 
+.presentation{
+  padding: 10px;
+}
+
 /* plugin specific */
 
 ul.plugins{
@@ -437,8 +442,8 @@ article.plugin header{
 article.plugin header h3{
 
 }
-article.plugin .body{
-  padding: 25px;
+article.plugin .body,article.news .body{
+  padding: 10px 10px 10px 25px;
 }
 article.plugin .body .callout{
   margin:0;
@@ -448,6 +453,9 @@ article.plugin .buttons{
   margin: 25px 0;
 }
 
+article.news h2.newstitle{
+  margin-left: 20px;
+}
 /* for stacking text on top of a font awesome icon */
 .icon-notanicon {
         font-family: Arial, Helvetica, Geneva, SansSerif;

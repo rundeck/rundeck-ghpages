@@ -12,8 +12,9 @@ title: Open Source Workflow Automation
 </section>
 
 <section>
-<article class="about container_12">
-	<p>Latest Rundeck News</p>
+    <article class="container_12">
+  <div class="grid_12">
+	<h2>Latest Rundeck News</h2>
 	<ul style="margin-bottom:25px; list-style-type:none;">
   {% for post in site.categories.news limit:3 %}
     <li>
@@ -21,18 +22,17 @@ title: Open Source Workflow Automation
     </li>
   {% endfor %}
 </ul>
-
- <!--
-    <div class="jcarousel-skin-tango" id="movies">
-
-    {% include tour-list.html %}
-
-    </div>
--->
-<section>
-{%include rundeckdescription-lower.html %}
-</section>
-
+</div>
+<div class="clear"></div>
 </article>
 </section>
 
+<section>
+<article class="about container_12">
+<!-- <section> -->
+{%include rundeckdescription-lower.html %}
+<!-- </section> -->
+
+<div class="clear"></div>
+</article>
+</section>

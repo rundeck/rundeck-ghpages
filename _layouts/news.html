@@ -17,14 +17,14 @@ layout: base
   </article>
 
 
-   <article class="plugin">
+   <article class="news">
 
         <header>
-          <h3>{{ page.title }} </h3>     
+          <a href="{{page.url}}"><h2 class="newstitle">{{ page.title }} </h2></a>
         </header>
         <div class="body">
           <span style="color:#808080;font-size:smaller;">Submitted by: {{page.author}} | Published: {{page.date|date_to_string}}<br/>Comments: <a href="#disqus_thread"></a></span>
-          <p>&nbsp;</p>
+          
           <div class="desc">
             
             {{ content }} 
