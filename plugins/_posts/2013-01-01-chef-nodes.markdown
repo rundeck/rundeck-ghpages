@@ -4,7 +4,7 @@ title: Chef Nodes
 tags: [Chef]
 service: ResourceModelSource
 rundeck_version: 1.3+
-project_url: https://github.com/opscode/chef-rundeck
+project_url: https://github.com/oswaldlabs/chef-rundeck
 integration: External Service
 description: Use this web service to provide Chef node data to Rundeck projects.  
 ---
