@@ -13,8 +13,7 @@ published: true
 <iframe width="640" height="480" src="//www.youtube.com/embed/F6SZe0gtSfw" frameborder="0"> </iframe>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<hr>
-<p>We always appreciate it when the community makes Rundeck related content. Now that we have this news forum we can start featuring community content more regularly. If you are in the content creation mood, have something to share, or notice something of interest, tweet &#40;<a href="https://twitter.com/Rundeck">@rundeck</a>&#41; it our way or send it to the <a href="http://simplifyops.com/#contact">SimplifyOps team</a>. </p>
 
+<p>We always appreciate it when the community makes Rundeck related content. Now that we have this news forum we can start featuring community content more regularly. If you are in the content creation mood, have something to share, or notice something of interest, tweet (<a href="https://twitter.com/Rundeck">@rundeck</a>) it our way or send it to the <a href="http://simplifyops.com/#contact">SimplifyOps team</a>. </p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
