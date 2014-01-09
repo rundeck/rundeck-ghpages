@@ -8,7 +8,7 @@ author: "Damon Edwards"
 published: true
 ---
 <p>&nbsp;</p>
-<p>Frédéric Alix created a nice video about how he uses Rundeck to create OmniOS zones on-demand. On his blog, <a href="http://blog.fredalix.com/2014/01/rundeck-create-omnios-zones.html">Frederic's World</a>, he has a link to a project archive containing the jobs used in this video.</p>
+<p>A user from the community, Frédéric Alix, created a nice video about how he uses Rundeck to create OmniOS zones on-demand. On his blog, <a href="http://blog.fredalix.com/2014/01/rundeck-create-omnios-zones.html">Frederic's World</a>, he has a link to a project archive containing the jobs used in this video.</p>
 <p>&nbsp;</p>
 <iframe width="640" height="480" src="//www.youtube.com/embed/F6SZe0gtSfw" frameborder="0"> </iframe>
 <p>&nbsp;</p>
