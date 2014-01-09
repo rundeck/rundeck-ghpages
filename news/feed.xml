@@ -6,7 +6,7 @@ layout: nil
   <channel>
     <title>Rudeck.org</title>
     <link>http://rundeck.org/news/</link>
-    <atom:link href="http://rundeck.org/news/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rundeck.org/news/feed.xml" rel="self" type="application/rss+xml" />
     <description>News from the Rundeck Project</description>
     <language>en-us</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
@@ -15,10 +15,10 @@ layout: nil
     {% for post in site.categories.news limit:10 %}
     <item>
       <title>{{ post.title }}</title>
-      <link>{{ site.baseurl }}{{ post.url }}</link>
+      <link>{{ site.full_url }}{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <author>{{ post.author }}</author>
-      <guid>{{ site.baseurl }}{{ post.id }}</guid>
+      <guid>{{ site.full_url }}{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
     {% endfor %}
