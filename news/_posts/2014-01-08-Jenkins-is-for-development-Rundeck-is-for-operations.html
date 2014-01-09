@@ -1,0 +1,55 @@
+---
+layout: news
+title: "Jenkins is for Development. Rundeck is for Operations."
+categories: 
+  - news
+comments: true
+author: "Damon Edwards"
+published: true
+---
+<p>&nbsp;</p>
+<p align="center">
+<img src="{{ site.baseurl }}/news/images/JenkinsAndRundeck.png">
+</p>
+<p>&nbsp;</p>
+<p>A common question that comes up from time-to-time on <a href="{{ site.baseurl }}/help.html">IRC chat</a>:<br>
+	<span style="font-style:italic;font-weight:bold;">"What’s the difference between Rundeck and Jenkins?"</span></p>
+<p>&nbsp;</p>
+<p>The super short answer:<br> <span style="font-style:italic;font-weight:bold;">"Rundeck is made for Operations and knows about the details of your environments."</span></p>
+<p>&nbsp;</p>
+<h4>The longer answer...</h4>
+<p>&nbsp;</p>
+<p>Jenkins and Rundeck are complementary tools that serve two necessary -- but different -- purposes. Jenkins is a development tool, designed for automating software builds. Rundeck is an operations tool, designed for executing operations tasks.</p>
+<p>&nbsp;</p>
+<p>Rundeck is built specifically to turn any operations procedure into a repeatable and secure service that can be accessed securely via a Web GUI or API. Of Rundeck’s features that support that operations-centric purpose, the one that stands out as the most unique from Jenkins is Rundeck’s inherent knowledge of the detail of your environments (nodes, services, etc.).</p> 
+<p>&nbsp;</p>
+<h4>Why is it powerful that Runeck knows the details of your environments?</h4> 
+<p>A key concept in Rundeck’s design is the idea of a Node. Nodes let you describe your infrastructure and environments giving you a view of hosts and services.</p>
+<p>&nbsp;</p>
+<p>Why is this important? Most operations tasks today are going to be executed across any number of servers (from single digits to thousands). Working in a distributed environment requires a tool that knows the details of that environment, whether its for executing actions or making sense of the output coming back from all of those servers.</p>
+<p>&nbsp;</p>
+<p>Where does Rundeck get its resource model information? Rundeck can pull that information from your CMDB, server inventory tool, Puppet/Chef, ec2, or any custom source to maintain an accurate resource model (even in dynamic cloud environments). You can also combine plugins to create composite views of Nodes.</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="{{ site.baseurl }}/news/images/RundeckKnowsNodes.png">
+</p>
+<p>&nbsp;</p>
+<p>Rundeck can do some really useful things right out of the box that Jenkins cannot (and you wouldn’t expect from any build tool):</p>
+<ul>
+<li><span style="font-weight:bold;">Rundeck executes workflows across any remote nodes/servers.</span> In Rundeck, you define both the workflow to be executed as well as where you want the steps of the workflow to be executed. You can set filters that determine on what nodes Rundeck will execute the job. The dispatch mechanism can be the default SSH (unix/linux), WinRM (Windows), or any other mechanism using a plugin (SaltStack, MCollective, Knife, etc.)</li>
+<li><span style="font-weight:bold;">Rundeck helps you better understand the job output coming back from remote servers.</span> Rundeck does more than just collect the raw output from the various local or remote steps in a job. Rundeck organizes all of that output and presents it back to the user with the full context of what action happened during each job step, on what node each job step occurred, and the status of that job step. You can toggle between a workflow view or a log view collated by node and step. This is an immense benefit to both the person designing a job and for others in your organization who need to quickly understand the job output. Many users see Rundeck’s value in its role as an information radiator and as important as Rundeck’s value as a workflow tool.</li>
+<li><span style="font-weight:bold;">Rundeck enables you to execute ad-hoc commands in addition to saved jobs.</span> Often you’ll find yourself in a position where you will need to execute commands and scripts in an exploratory or emergency situation. Assuming you have the appropriate permissions in Rundeck, you can use Rundeck’s ad-hoc commands feature to execute actions where and when necessary (and later save them as jobs for future use or sharing with others in your organization). In this scenario, Rundeck provides a similar capability that you would otherwise need a network shell tool to achieve.</li>
+<li><span style="font-weight:bold;">Rundeck makes it easy to define and execute multiple types of workflows.</span> By default you can choose what execution strategy you want a job’s workflow to follow in order to match the real world operations challenge you are trying to solve. You can have the workflow be step-oriented (execute a step on all of the nodes selected before continuing to next step) or node-oriented (execute all steps on a nodes before moving on to the next node). You can also decide if you want steps to run in parallel and set thread count limits.</li>
+<li><span style="font-weight:bold;">Rundeck jobs have built-in error handling features.</span> When you define your job’s workflow in Rundeck you can take advantage of built-in error handling that let’s you gracefully handle the various types of failures that operations teams come to expect. It even gives you the option of re-running a previous execution on only the nodes that previously failed.</li>
+<li><span style="font-weight:bold;">Rundeck logs all activity and send out notifications.</span> The usefulness of Rundeck’s built-in ability to add context to a job’s output (not just what ran, but where and what the status was) doesn’t end with just the person actively running or watching the job execution. Both logging and notifications are plugin points in Rundeck. This means you can send all activity information whatever logging and notification tools your organizations uses (e.g. Jabber, IRC, HipChat, Splunk, Log4J, etc). Rundeck’s contextualized output is also very useful for auditing purposes. </li>
+<li><span style="font-weight:bold;">Rundeck gives you access control policy that knows about your environments.</span> Rundeck gives you the expected capability of being able to specify who can edit or execute what jobs and when. However, because of Rundeck’s knowledge of your resource model, you can also use Rundeck’s fine grain ACL policies to create rules about what nodes and actions your users can do. Through LDAP integration, Rundeck can manage login access to directories like Active Directory or OpenLDAP.</li>
+</ul>
+<p>&nbsp;</p>  
+<h4>How are Rundeck and Jenkins often used together?</h4>
+<p>Development and Operations are equally important parts of a technology organization.  If you want to have high quality and throughput throughout your application lifecycle, you need tools that do their specific tasks well and work well together. Jenkins and Rundeck integrate well and are commonly used in the same delivery toolchain that spans from Development to Operations (and often by organizations who are looking to achieve “DevOps” style results). Jenkins will manage software builds and Rundeck will manage any and all operations tasks. Jenkins can trigger Rundeck to do deployments in a Continuous Deployment scenario. The <a href="{{ site.baseurl }}/plugins/">Rundeck Jenkins plugin</a> plays a key role in this. The diagram below shows a high-level view of a common integration scenario for Rundeck and Jenkins.</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="{{ site.baseurl }}/news/images/RundeckJenkinsIntegration.png">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

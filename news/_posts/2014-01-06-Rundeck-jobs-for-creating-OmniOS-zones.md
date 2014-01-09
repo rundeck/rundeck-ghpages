@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "Example Rundeck jobs for creating OmniOS zones"
+title: "Example: Rundeck jobs for creating OmniOS zones"
 categories: 
   - news
 comments: true
