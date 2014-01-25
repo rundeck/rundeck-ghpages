@@ -13,9 +13,9 @@ title: Open Source Workflow Automation
 
 <section>
     <article class="container_12">
-  <div class="grid_6">
+  <div class="grid_6 newsbox" style="padding: 10px 0">
 	<h2>Latest Rundeck News</h2>
-	<ul style="margin-bottom:25px; list-style-type:none;">
+	<ul class="newslist">
   {% for post in site.categories.news limit:4 %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

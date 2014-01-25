@@ -521,3 +521,27 @@ article.news h2.newstitle{
   h2, h3{ page-break-after: avoid; }
 }
 
+
+/* custom style */
+.newsbox h2{
+    border-bottom: 1px solid #ddd;
+}
+ul.newslist{
+  list-style-type:none;
+  margin:0;
+}
+ul.newslist li {
+}
+ul.newslist li + li a{
+    border-top: 1px solid #ddd;
+}
+ul.newslist li a{
+  color: #444;
+  padding: 8px 16px;
+display: block;
+
+}
+ul.newslist li a:hover{
+text-decoration: underline;
+color:red;
+}
