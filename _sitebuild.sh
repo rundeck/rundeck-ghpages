@@ -56,6 +56,9 @@ cd -
 
 
 cat >_config.yml <<END
+baseurl: ""
+url: ""
+full_url: "http://www.rundeck.org"
 rd_version: "$CUR_VERSION"
 rd_jar_name: "$JAR_NAME"
 rd_jar_sha: "$JAR_SHASUM"

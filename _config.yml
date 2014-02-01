@@ -1,3 +1,6 @@
+baseurl: ""
+url: ""
+full_url: "http://www.rundeck.org"
 rd_version: "2.0.0"
 rd_jar_name: "rundeck-launcher-2.0.0.jar"
 rd_jar_sha: "b7f980625770a48c128ed35e86e7958769386a95"
