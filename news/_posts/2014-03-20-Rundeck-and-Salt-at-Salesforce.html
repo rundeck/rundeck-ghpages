@@ -1,0 +1,40 @@
+---
+layout: news
+title: "Rundeck and Salt Integration at Salesforce (Video)"
+categories: 
+  - news
+comments: true
+author: "Damon Edwards"
+published: true
+---
+<p>&nbsp;</p>
+<p align="center">
+<img src="{{ site.baseurl }}/news/images/SaltAndRundeck.png">
+</p>
+<p>&nbsp;</p>
+<p>
+In the video below, <a href="https://www.linkedin.com/in/alexhonor">Alex Honor</a> (SimplifyOps) talks to <a href="https://www.linkedin.com/pub/kim-ho/0/871/283">Kim Ho</a> (Salesforce.com) and gets a demo of the Rundeck and <a href="http://www.saltstack.com/community/">Salt</a> integration at Salesforce.com.
+</p>
+<p>&nbsp;</p>
+<p>
+The main use case that Alex and Kim discuss is using Rundeck and Salt to drive Salesforce.com's infrastructure provisioning procedures. Kim explained how operators used to deal with complicated run lists where there could be 12 or more steps, each with lots of sub-steps. They needed a way to remove the manual process and allow operators to push a button and get a fully provisioned host that is consistent and correct every time. 
+</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="{{ site.baseurl }}/news/images/GigantorStack.png">
+</p>
+<p>&nbsp;</p>
+<p>
+To handle the scale and complexity of their environment Salesforce decided to use Salt for remote execution and the dispatch of commands to servers. Above Salt, they use Rundeck to define the sequence of actions that need to take place in a particular workflow. To tie Salt and Rundeck together, Kim wrote the first <a href="https://github.com/rundeck-plugins/salt-step">Salt plugin for Rundeck</a>. To make things even simpler for their operators, they created a custom web interface that is specific to Salesforce. An internal application called Kingpin provides security and configuration information. All together, they call this solution Gigantor. It's a great example of a flexible and scalable "loosely-coupled" toolchain design.
+</p>
+<p>&nbsp;</p>
+<p> 
+Watch the video for a more hands-on view…
+<p>&nbsp;</p>
+</p>
+<iframe width="640" height="360" src="//www.youtube.com/embed/jzQE2297zTY" frameborder="0" allowfullscreen></iframe>
+<p>
+Note: This demo video is with the older Rudeck 1.6 and not the new and improved UI of Rundeck 2.0.
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
