@@ -1,0 +1,49 @@
+---
+layout: news
+title: "How much Java do I need to know to use Rundeck? None."
+categories: 
+  - news
+comments: true
+author: "Damon Edwards"
+published: true
+---
+<p>&nbsp;</p>
+<p>A well designed tool should NOT require users (casual, regular, or power users) to have a working knowledge of the language that is used to write the tool.</p>
+<p>&nbsp;</p>
+<p>The right architecture combined with a liberal allowance for plugins in multiple language and lots of flexible configuration points should go a long way towards enabling any customization that is needed. The need to actually hack the core of the tool should be far and few between. We think we've done a good job with this design principle in Rundeck, but the question does still come up: "Since Rundeck's core is written in Java, do I need to know Java to use it"? The short answer (and long answer below) is "no".</p>
+<p>&nbsp;</p>
+<p>This topic came up again in a recent <a href="http://developerblog.redhat.com/2014/05/21/building-a-continuous-deployment-engine/">blog post by a Red Hat product team</a> that was building out their continuous deployment pipeline. Putting aside the business ramifications, cost, and risk of taking on building and maintaining your own tools (which wasn't discussed), "we know language x so we need a tool written in language x or we'll build our own" appears to be this team's default position. When the topic of Rundeck and Java came up in the comments, Greg Schueler explained why this wasn't the case for Rundeck and that Rundeck's design makes it essentially language agnostic.</p>
+<p>&nbsp;</p>
+
+
+
+<blockquote>
+<p>Hi, thanks for note about Rundeck. I understand Java/groovy is not everybody's cup of tea (or island).</p>
+<p>&nbsp;</p>
+
+<p>I want to clarify that while the Rundeck server is written in Java, Rundeck steps and workflows are usually made up of shell scripts or other scripting languages. We intentionally designed Rundeck to run other people's automation scripts and tools. It doesn't require any Java experience of the deployment, ops or development people who use or operate it in order to define repeatable orchestration workflows.</p>
+<p>&nbsp;</p>
+
+<p>The built-in steps support shell commands or shell scripts (via any interpreter on the remote system). Also, steps in Rundeck workflows can be supplied via custom plugins, and the plugins themselves do not need to be written in Java. They can defined as scripts and bundled into a simple .zip for installation in the Rundeck server, without restarting it.</p>
+<p>&nbsp;</p>
+
+<p>The workflow definitions (sequences of steps) in Rundeck also do not require an IDE, they can be simple YAML or XML files, or can be created directly in the GUI.</p>
+<p>&nbsp;</p>
+
+<p>Some of the problems you describe for which we don't have a direct solution yet are on our roadmap, including steps requiring third-party approval (e.g. via a Jira ticket), and tracking of deployment artifacts.</p>
+<p>&nbsp;</p>
+
+<p>We do currently have: robust authorization via ACLs, authn/authz integration with other systems, auditable and repeatable workflow e<p>&nbsp;</p>
+ecution, external node/host data, integration with Jenkins, our own API, etc.</p>
+
+<p>A primary goal of Rundeck is to be tool-agnostic, and toolchain friendly. Our purpose is to connect the dots between dev, ops, and security, and so we try to make it easy to integrate between build/CI, deployment/orchestration, and auth/audit systems and tools.</p>
+<p>&nbsp;</p>
+
+<p>Rundeck is under continued, active development, and is Apache 2 licensed. We welcome doc fixes, patches, or pull requests!</p>
+<p>&nbsp;</p>
+
+<p>cheers,<br/>Greg Schueler <br/>greg@simplifyops.com <br/>Lead developer - Rundeck</p>
+</blockquote>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
