@@ -3,6 +3,8 @@ title: Rundeck RPM packages
 layout: download
 download_type: RPM
 ---
+* [rundeck-config-2.1.3-1.20.GA.noarch.rpm](http://download.rundeck.org/rpm/rundeck-config-2.1.3-1.20.GA.noarch.rpm) (7765 bytes) - 2014-06-27 21:57
+* [rundeck-2.1.3-1.20.GA.noarch.rpm](http://download.rundeck.org/rpm/rundeck-2.1.3-1.20.GA.noarch.rpm) (61965017 bytes) - 2014-06-27 21:57
 * [rundeck-config-2.1.2-1.18.GA.noarch.rpm](http://download.rundeck.org/rpm/rundeck-config-2.1.2-1.18.GA.noarch.rpm) (7764 bytes) - 2014-05-23 22:43
 * [rundeck-2.1.2-1.18.GA.noarch.rpm](http://download.rundeck.org/rpm/rundeck-2.1.2-1.18.GA.noarch.rpm) (61955008 bytes) - 2014-05-23 22:42
 * [rundeck-config-2.1.1-1.17.GA.noarch.rpm](http://download.rundeck.org/rpm/rundeck-config-2.1.1-1.17.GA.noarch.rpm) (7771 bytes) - 2014-05-02 00:28
