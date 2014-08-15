@@ -1,20 +1,20 @@
 <ul class="about">
 <li>
 <p>
-    Welcome to <em>Rundeck</em>, a web-accessible console for dispatching commands and scripts to your nodes.
+    Welcome to <em>Rundeck</em>, the human interface to your operations. Rundeck features fine-grain access controls, a built-in job scheduler, and the ability to dispatch commands and scripts to your nodes.
 </p>
 
 <figure>
-<img src="images/screenshots/runpage1.png" alt="Node listing">
+<img src="images/screenshots/2_job_report.png" alt="Rundeck Web GUI">
 </figure>
 </li>
 
     
 <li>
-<p>Import <em>Node resources</em> from anywhere: Chef, Puppet, Amazon EC2, or your own in-house CMDB. Nodes can be organized using tags or other attributes.</p>
+<p>Import <em>Node</em> information from anywhere: Chef, Puppet, Amazon EC2, or your own in-house CMDB / node list. Nodes can be organized using tags or other customizable attributes.</p>
 
 <figure>
-<img src="images/screenshots/nodes1.png" alt="Node listing">
+<img src="images/screenshots/2_nodes.png" alt="Node listing">
 </figure>
 </li>
 
@@ -24,65 +24,70 @@
     <p>Run commands <i>ad-hoc</i> by just typing in the command and hitting enter.</p>
 
 <figure>
-<img src="images/screenshots/adhoc1.png">
+<img src="images/screenshots/2_command_run.png" alt="Run commands">
 </figure>
 </li>
 
-<li><p><em>Plugins</em> can add new node sources, formats and remote executors.</p> 
+<li><p><em>Plugins</em> can add new node sources, formats, and remote executors.</p> 
 
 <figure>
-<img src="images/screenshots/addsource1.png" alt="Add Node sources in the GUI">
+<img src="images/screenshots/2_plugins.png" alt="Plugins">
 </figure>
 </li>
 
-<li><p><em>Live executions</em> can be followed, and interleaved output from multiple nodes can be separated.</p>
+<li><p><em>Live executions</em> can be followed and the interleaved output from multiple nodes can be separated and organized. Give your jobs user friendly descriptions and with read-only access rights your <i>non-technical colleagues</i> can watch key jobs like deployments or data batch processing.</p>
 <figure>
-<img src="images/screenshots/nowrunning1.png">
+<img src="images/screenshots/2_nowrunning.png" alt="Now Running">
 </figure>
 </li>
 
-<li><p><em>Jobs</em> define commands to run on a schedule or on demand. You can notify people via email or web services via webhook when they finish.</p>
+<li><p><em>Jobs</em> define commands to run on a schedule or on-demand. You can notify people via email &#40;or web services via webhook&#41; when a Job finishes.</p>
 
 <figure>
-<img src="images/screenshots/jobs1.png">
-<figcaption>Organize Jobs into Groups. Schedule them using cron syntax.</figcaption>
+<img src="images/screenshots/2_joblist.png" alt="Job List">
+<figcaption>Organize Jobs into Job Groups. Schedule Jobs using cron syntax.</figcaption>
 </figure>
 </li>
 
-<li><p><em>Workflows</em> allow coordinated sequences of commands, scripts or other Jobs.</p>
+<li><p><em>Workflows</em> allow coordinated sequences of commands, scripts or other Jobs. With the <em>workflow editor</em> you can modify workflows in the GUI without touching the command-line or source files. But, you can also use textual source definitions and export/import via GUI, CLI or API.</p>
 
 <figure>
-<img src="images/screenshots/workflow1.png" >
+<img src="images/screenshots/2_edit_workflow.png" alt="Add step to workflow">
+</figure>
+</li>
+
+<figure>
+<img src="images/screenshots/2_edit_job_step.png" alt="Edit job step that calls another job">
 </figure>
 </li>
 
 
-<li><p>With the <em>workflow editor</em> you can modify workflows in the GUI without touching the command-line or source files. But, you can also use textual source definitions and export/import via GUI, CLI or API.</p>
+<li><p>Fine-grain <em>access control</em> capabilities allow you to specify who can do what and to what resources. You can also specify what different roles will see. With Rundeck's context-rich <em>logging</em> &#40;local logs or stream the logs to another tool&#41; provide you with an audit trail for management or compliance uses.</p>
 
 <figure>
-<img src="images/screenshots/workfloweditor1.png" >
+<img src="images/screenshots/2_rundeck_accesscontrol.png" alt="access control" >
 </figure>
 </li>
 
 
-<li><p>The <em>Web API</em> and command-line tools let you run and manage Jobs, update your node resources, and retrieve execution history. You can connect Rundeck with other tools, scripts and services easily.</p>
+<li><p>The <em>Web API</em> lets you run and manage Jobs, update your node resources, and retrieve execution history. You can use the API to connect Rundeck with other tools, scripts and services easily.</p>
 
 <figure>
-<img src="images/screenshots/api1.png" >
+<img src="images/screenshots/api1.png" alt="API" >
 </figure>
 </li>
 
-<li><p>The <em>execution history</em> lets you audit and search all previous executions.</p>
+<li><p>The <em>activity history</em> lets you audit and search all previous Job and command executions.</p>
 
 <figure>
-<img src="images/screenshots/history1.png" >
+<img src="images/screenshots/2_rundeck_activity.png" >
 </figure>
 </li>
 
 <li>
     <ul>
-        <li><p>Add <em>access control</em> to all aspects of the system.</p></li>
-        <li><p>Integrate with other tools like Chef, Puppet, Jenkins, etc.</p></li>
+        <li><p>Add access control to all aspects of the system.</p></li>
+        <li><p>Integrate with other tools like Chef, Puppet, Jenkins, SaltStack, Ansible, Docker, etc.</p></li>
         <li><p>Add or create plugins for further features.</p></li>
         <li><p><a href="screencasts.html">Watch some screencasts</a> to see how it works.</p></li>
         <li><p><a href="https://github.com/dtolabs/rundeck">Go to the GitHub project</a> checkout the source.</p></li>
