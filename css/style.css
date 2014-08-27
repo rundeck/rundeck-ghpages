@@ -294,10 +294,11 @@ em{
     text-align: center;    
 }
 
-
+/**
 article strong {
     margin: 5px 10px;
 }
+**/
 
 /** about page and links **/
 article.aboutlink  {
