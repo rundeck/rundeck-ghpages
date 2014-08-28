@@ -18,15 +18,17 @@ title: Job Scheduler
 
       <h3>Agent less</h3>
  	  <div>
- 		<p>Rundeck is considered an Agent-less system because it does not require the installation of a special client for Rundeck. 
-Rundeck uuses SSH (or winrm) to execute command commands and scripts on the remote servers. 
+ 		<p>Rundeck is considered an Agent-less system because it does not require the installation of a special Rundeck client on the remote hosts.
+          Rundeck uses SSH to execute commands and scripts on the remote servers. Windows users normally use the winrm plugin to execute commands.
+          </p>
+        <p>
           It is possible to integrate Rundeck with an agent system. The Rundeck "NodeExecution" plugin can be used to delegate remote command execution to an external agent system (eg, salt, mcollective). 
  		</p>
  	  </div>
       <h3>Script storage</h3>
  	  <div>
- 		<p>Rundeck can copy local and web accessible scripts to remote nodes and execute them remotely. You can copy your scripts to the rundeck server or in any place accessible via HTTP GET. For script execution, Rundeck transfers the script file and then executes it. 
-          By default, Rundeck uses SCP to transfer files remotely. You can configure Rundeck to use alternative methods by configuring a "FileCopier" plugin. You can integrate other protocols and transfer methods with a FileCopier plugin.
+ 		<p>Rundeck can copy local and web accessible scripts to remote nodes and execute them. You can copy your scripts to the Rundeck server or in any place accessible via HTTP GET. For script execution, Rundeck transfers the script file and then executes it. 
+          By default, Rundeck uses SCP to transfer files remotely. You can configure Rundeck to use alternative methods by configuring a "FileCopier" plugin. You can integrate other protocols and transfer methods with a different FileCopier plugin.
  		</p>
  	  </div>
       <h3>Platforms</h3>
@@ -38,7 +40,7 @@ Rundeck uuses SSH (or winrm) to execute command commands and scripts on the remo
  	  </div>
       <h3>Any OS account</h3>
  	  <div>
- 		<p>Rundeck can run the job as any OS-account on the target system. Jobs select the nodes they execute steps on. Each node declares the username to connect to the host and execute the remote command. 
+ 		<p>Rundeck can run the job as any OS-account on the target system. Jobs select the nodes they execute steps on. Each node declares the username to connect to the host and execute the remote command. For SSH and SCP, Rundeck can use either key-based or username/password authentication. 
  		</p>
  	  </div>
       <h3>stdout/err transfer</h3>
@@ -52,16 +54,17 @@ Rundeck uuses SSH (or winrm) to execute command commands and scripts on the remo
       <h3>File Transfer</h3>
  	  <div>
  		<p>By default, Rundeck uses SCP to copy files to remote hosts. You can introduce alternative methods for file transfer
-          via a "FileCopier" plugin.
+          via a "FileCopier" plugin. You can have multiple FileCopier plugins and specify a different one to each node.
  		</p>
  	  </div>
       <h3>Role based security</h3>
  	  <div>
  		<p>Rundeck allows you to grant privileges using roles and rules in its access control policy.
           Roles are user groups you maintain in a user directory, often OpenLDAP or Active Directory.
-          The ACL policy declares what users and groups can execute a kind of action on a resource
+          The ACL policy rules declare what users and groups can execute a kind of action on a resource
           in a given context.
-          The ACL policies let you manage activity based on common roles: developers, operators, administrators.
+          The ACL policies let you manage activity based on common roles (eg., developers, operators, administrators)
+          by maintaining sets of rules that grant or deny their activity.
           
  		</p>
  	  </div>
