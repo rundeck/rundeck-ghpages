@@ -14,36 +14,65 @@ title: Job Scheduler
  	  
  	  
       
- 	  <h2 id="mailing">Job Scheduler Features</h2>
+ 	  <h1>Rundeck: The Job Scheduler</h1>
 
-      <h3>Agent less</h3>
+    <h4>Job scheduling is one of Rundeck's most popular capabilities. Top uses include:
+    <ul> 
+      <li>Scheduling and organizing tasks that were previously triggered manually</li>
+      <li>Providing visibility into jobs that were previously run through cron or custom tools</li>
+      <li>Replacing / avoiding expensive and unwieldy legacy job schedulers</li>
+    <ul> 
+    </h4>
+<p>&nbsp;</p>
+    <h2>Rundeck's Job Scheduler Features:</h2>
+      <h3> <span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+          Agent less</h3>
  	  <div>
  		<p>Rundeck is considered an Agent-less system because it does not require the installation of a special Rundeck client on the remote hosts.
-          Rundeck uses SSH to execute commands and scripts on the remote servers. Windows users normally use the winrm plugin to execute commands.
+          By default, Rundeck uses SSH to execute commands and scripts on the remote servers. Windows users normally use the winrm plugin to execute commands.  
           </p>
         <p>
           It is possible to integrate Rundeck with an agent system. The Rundeck "NodeExecution" plugin can be used to delegate remote command execution to an external agent system (eg, salt, mcollective). 
  		</p>
  	  </div>
-      <h3>Script storage</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           Script storage</h3>
  	  <div>
  		<p>Rundeck can copy local and web accessible scripts to remote nodes and execute them. You can copy your scripts to the Rundeck server or in any place accessible via HTTP GET. For script execution, Rundeck transfers the script file and then executes it. 
           By default, Rundeck uses SCP to transfer files remotely. You can configure Rundeck to use alternative methods by configuring a "FileCopier" plugin. You can integrate other protocols and transfer methods with a different FileCopier plugin.
  		</p>
  	  </div>
-      <h3>Platforms</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           Multiple platforms</h3>
  	  <div>
  		<p>Rundeck is a Java webapp and typically runs out of Tomcat or Jetty. The CLI tools are also java-based.
           Rundeck can be deployed to Windows Servers or a wide variety of Unix flavors, most often Linux. 
           Rundeck runs on Mac OSX, too.
  		</p>
  	  </div>
-      <h3>Any OS account</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           Any OS account</h3>
  	  <div>
  		<p>Rundeck can run the job as any OS-account on the target system. Jobs select the nodes they execute steps on. Each node declares the username to connect to the host and execute the remote command. For SSH and SCP, Rundeck can use either key-based or username/password authentication. 
  		</p>
  	  </div>
-      <h3>stdout/err transfer</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           stdout/err transfer</h3>
  	  <div>
  		<p>Both the stdout and stderr messages of the job steps are aggregated and displayed in real time.
           At the end of the job run, the log file is stored along with the execution metadata.
@@ -51,24 +80,36 @@ title: Job Scheduler
           executed on each Node, its status, and the stdout/err messages.
  		</p>
  	  </div>
-      <h3>File Transfer</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           File transfer</h3>
  	  <div>
  		<p>By default, Rundeck uses SCP to copy files to remote hosts. You can introduce alternative methods for file transfer
           via a "FileCopier" plugin. You can have multiple FileCopier plugins and specify a different one to each node.
  		</p>
  	  </div>
-      <h3>Role based security</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           Role based access control</h3>
  	  <div>
  		<p>Rundeck allows you to grant privileges using roles and rules in its access control policy.
           Roles are user groups you maintain in a user directory, often OpenLDAP or Active Directory.
           The ACL policy rules declare what users and groups can execute a kind of action on a resource
           in a given context.
-          The ACL policies let you manage activity based on common roles (eg., developers, operators, administrators)
+          The ACL policies let you manage activity based on common roles &#40;eg. developers, operators, administrators&#41;
           by maintaining sets of rules that grant or deny their activity.
           
  		</p>
  	  </div>
-      <h3>Auditing</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           Auditing and reporting</h3>
  	  <div>
  		<p>Rundeck records all job activity. An auditor can use Rundeck logs to find out when a job was
           created or changed, when it ran, by who, the policy rule that granted access to it, any stdout/err
@@ -76,7 +117,11 @@ title: Job Scheduler
           Logs can be stored locally or synchronized to a centralized secure facility. 
  		</p>
  	  </div>
-      <h3>Design Lifecycle</h3>
+      <h3><span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#444444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>
+           Design lifecycle</h3>
  	  <div>
  		<p>Job definitions can be exported to editable text files or packaged into an archive.
           Some users maintain the job definitions as code in a source repository and publish
@@ -84,7 +129,11 @@ title: Job Scheduler
           job definitions and use the project export and import functions.
  		</p>
  	  </div>
-      <h3>User Interfaces</h3>
+      <h3>
+        <span class="icon-stack" style="font-size: 16px;">
+            <i class="icon-check-empty icon-stack-base" style="color:#44444"></i>
+            <i class="icon-notanicon" style="color:#3a84df; font-size: 180%">&#x2713;</i>
+           </span>Multiple user interfaces</h3>
  	  <div>
  		<p>Rundeck provides three interfaces:
           <ul>
