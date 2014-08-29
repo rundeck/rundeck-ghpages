@@ -31,11 +31,7 @@ title: Job Scheduler
            </span>
           Agentless</h3>
  	  <div>
- 		<p>Rundeck is considered an "agentless" system because it does not require the installation of a special Rundeck client on the remote hosts.
-          By default, Rundeck uses SSH to execute commands and scripts on the remote servers. Windows users normally use the winrm plugin to execute commands.  
-          </p>
-        <p>
-          It is possible to integrate Rundeck with an agent system. The Rundeck "NodeExecution" plugin can be used to delegate remote command execution to an external agent system (eg, salt, mcollective). 
+ 		<p>Rundeck is considered an "agentless" system because it does not require the installation of a special Rundeck client on the remote hosts. By default, Rundeck uses SSH to execute commands and scripts on the remote servers. Windows users normally use the winrm plugin to execute commands. If your use case requires an agent, Rundeck's "NodeExecution" plugin can be used to delegate remote command execution to an external agent system (eg, salt, mcollective). 
  		</p>
  	  </div>
       <h3><span class="icon-stack" style="font-size: 16px;">
