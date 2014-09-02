@@ -1,0 +1,93 @@
+
+---
+
+layout: base
+title: Run Book Automation
+
+---
+
+<section id="product" class="page">
+
+  
+  <article class="container_12">
+
+ 	<div class="grid_12">
+ 	  <h2 id="features">Runbook Automation Uses</h2>
+
+      <p>Rundeck helps you manage complex datacenter and cloud environments letting you gain control over your operating procedures and helping reduce mean time to repair (MTTR).
+        Typical areas where Rundeck is used for runbook automation include incident management, infrastructure maintenance, and deployment provisioning.
+        Rundeck is also used to handle internal and business unit operation service requests like health checks, system refreshes, diagnostic routines, backups and management of data.</p>
+ 	  <div class="clear"></div>
+
+ 	  <h2 id="features">Runbook Automation Features</h2>
+
+      <h3>Custom Workflows/h3>
+ 	  <div>
+         <p>Rundeck provides tools to define, build, deploy and manage automation. These automated processes 
+           are defined in Job Workflows. 
+           Workflow steps are used to automate the individual tasks of the process.
+
+          User inputs for the workflow are described by job options. Options can be required, have defaults,
+          present multple choices or be considered secure.
+          The workflow definition can also declare when Notifications are generated when the Job starts, fails or succeeds.
+           Errors occuring in the workflow can cause the job to fail immediately, keep going or trigger step-specific error handlers.
+          Error handlers might catch an error and gracefully fail while other handlers might recover the error and keep going.
+
+        </p>
+ 	  </div>
+      <h3>End-to-end orchestration</h3>
+ 	  <div>
+ 		<p>Rundeck workflows can coordiante steps across local or remote servers. Remote servers are targeted using
+          filters, query expressions that match servers based on attributes and tags. 
+          
+        </p>
+ 	  </div>
+      <h3>Cross-platform </h3>
+ 	  <div>
+ 		<p> Rundeck improves efficiency across multiple tools, systems, and departments by eliminating or crossing technology and organizational process structures. Rundeck workflows can be executed across Windows and Unix platforms and can be extended to new platforms via Node Executor or Step plugins.
+        </p>
+ 	  </div>
+
+
+      <h3>Extensible structure</h3>
+      <div>
+        <p>
+          Rundeck steps are implemented via a Step plugin.
+          Step plugins are typically created to integrate with external tools and services. 
+          Steps can be Node steps or Workflow steps. A workflow step is one that runs just once in the workflow. A Node step is executed across each of the matching targeted servers.
+        </p>
+      </div>
+
+      <h3>Server Inventory</h3>
+ 	  <div>
+ 		<p>
+          Rundeck workflows execute steps across servers, known as Nodes. The nodes describe the systems in your infrastructure (both physical and virtual).
+          Each node in the inventory contains metadata that describe how to connect to the node and a map of node specific attributes. 
+          Tags can be used to create classifications or groupings within the Node inventory.
+          You can search the nodes to create views of your infrastructure.
+        </p>
+ 	  </div>
+
+      <h3>Security Access Control</h3>
+ 	  <div>
+ 		<p>Workflows can be delegated to other users to provide self service or reduce request load from operations teams. Rundeck provides fine grained role based access control policy to safely grant or deny access to job workflows, nodes or activity logs. 
+        </p>
+ 	  </div>      
+
+      <h3>Notification</h3>
+ 	  <div>
+ 		<p>The start, success or failure of a job workflow can be forwarded to interested parties via Notifications.
+          Email, webhooks or a variety of plugins can be configured to be sent by each Job.
+        </p>
+ 	  </div>
+
+      <h3>Design lifecycle</h3>
+ 	  <div>
+ 		<p>Workflow definitions can be exported to editable text files or packaged into an archive. Some users maintain the workflow definitions as code in a source repository and publish it to Rundeck via CLI or the API. Other users use the Rundeck GUI to maintain the  definitions and use the project export and import functions.
+        </p>
+ 	  </div>
+    </div>
+ 	<div class="clear"></div>
+  </article>
+  
+</section>
