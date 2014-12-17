@@ -6,22 +6,17 @@ title: News
 ---
 
 <section id="about" class="page">
-  
-  <article class="container_12 introduction">
-    <div class="grid_12">
-      <p>
+  <div class="container_12">
+  <article class="grid_12 ">
+      <p class="introduction">
         News and Announcements
       </p>
-    </div>
-
-    <div class="clear"></div>
-
+  
   </article>
 
 
-  <article class="container_12">
+  <article class="grid_12">
 	
-    <div class="grid_12">
       <ul class="plugins">
         {% for post in site.categories.news %}
         <li >
@@ -36,12 +31,12 @@ title: News
         </li>
         {% endfor %}
       </ul>
-    </div>
     
-    <div class="clear"></div>
 
   </article>
 
 
+</div>
+    <div class="clear"></div>
 </section>
 
