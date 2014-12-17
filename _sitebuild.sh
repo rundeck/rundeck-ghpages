@@ -68,9 +68,9 @@ rd_deb_name: "$DEB_NAME"
 rd_deb_url: "$DEB_URL"
 rd_deb_sha: "$DEB_SHASUM"
 rd_deb_size: "$DEB_SIZE"
-rd_zipball: "https://github.com/dtolabs/rundeck/zipball/v$CUR_VERSION"
-rd_tarball: "https://github.com/dtolabs/rundeck/tarball/v$CUR_VERSION"
-rd_releasenotes: "https://github.com/dtolabs/rundeck/blob/v$CUR_VERSION/RELEASE.md"
+rd_zipball: "https://github.com/rundeck/rundeck/zipball/v$CUR_VERSION"
+rd_tarball: "https://github.com/rundeck/rundeck/tarball/v$CUR_VERSION"
+rd_releasenotes: "https://github.com/rundeck/rundeck/blob/v$CUR_VERSION/RELEASE.md"
 markdown: kramdown
 END
 
