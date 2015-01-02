@@ -6,16 +6,29 @@ title: News
 ---
 
 <section id="about" class="page">
-  <div class="container_12">
-  <article class="grid_12 ">
-      <p class="introduction">
-        News and Announcements
+
+  <article class="container_12 aboutlink">
+      <div class="grid_12">    
+        <a href="index.html" class="selfpage">
+      <h1>Rundeck News</h1>
+        </a>
+        </div>
+      <div class="clear"></div>
+    </article>
+
+  <article class="container_12 introduction">
+  <div class="grid_12 ">
+      <p>
+        News and Announcements. <a href="feed.xml">RSS Feed</a>
       </p>
-  
+      
+  </div>
+      <div class="clear"></div>
   </article>
 
+  <article class="container_12">
 
-  <article class="grid_12">
+  <div class="grid_12">
 	
       <ul class="plugins">
         {% for post in site.categories.news %}
@@ -33,10 +46,10 @@ title: News
       </ul>
     
 
-  </article>
-
-
-</div>
+  </div>
     <div class="clear"></div>
+
+
+</article>
 </section>
 
