@@ -20,8 +20,9 @@ release: upload list site
 
 list:
 	for i in deb rpm jar war ; do \
-	s3cmd ls s3://download.rundeck.org/$${i}/ | grep  -e "\.$${i}" | sort -r > _$${i}.list ; \
-	sort -r _$${i}.list | perl _list.pl  "-BASE=http://download.rundeck.org/$${i}/" > $(DLDIR)$${i}/_list.md ; \
+	ls -l --time-style=+%C%y-%m-%d\ %H:%M $(DIR)/release-$(VERSION)/*$(VERSION)*.$${i} |  cut -f6,7,5,8 -d' '  > _$${i}.list ; \
+	cat _$${i}.list   | perl _list.pl  "-BASE=http://download.rundeck.org/$${i}/" > $(DLDIR)$${i}/_list.md ; \
+	grep '^\*' $(DLDIR)$${i}/index.md >> $(DLDIR)$${i}/_list.md ; \
 	cat $(DLDIR)$${i}/_index.md $(DLDIR)$${i}/_list.md > $(DLDIR)$${i}/index.md ; \
 	done
 
