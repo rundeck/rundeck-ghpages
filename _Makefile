@@ -21,6 +21,7 @@ release: upload list site
 list:
 	for i in deb rpm jar war ; do \
 	ls -l --time-style=+%C%y-%m-%d\ %H:%M $(DIR)/release-$(VERSION)/rundeck*$(VERSION)*.$${i} | sed 's/ \+/ /g'|  cut -f6,7,5,8 -d' '  > _$${i}.list ; \
+	if [ -f $(DIR)/release-$(VERSION)/rundeck*$(VERSION)*.$${i}.asc ] ; then ls -l --time-style=+%C%y-%m-%d\ %H:%M $(DIR)/release-$(VERSION)/rundeck*$(VERSION)*.$${i}.asc | sed 's/ \+/ /g'|  cut -f6,7,5,8 -d' '  >> _$${i}.list ; fi ; \
 	cat _$${i}.list   | perl _list.pl  "-BASE=http://download.rundeck.org/$${i}/" > $(DLDIR)$${i}/_list.md ; \
 	grep '^\*' $(DLDIR)$${i}/index.md >> $(DLDIR)$${i}/_list.md ; \
 	cat $(DLDIR)$${i}/_index.md $(DLDIR)$${i}/_list.md > $(DLDIR)$${i}/index.md ; \
