@@ -16,7 +16,7 @@ title: Job Scheduler and Runbook Automation
   <div class="grid_6 newsbox" style="padding: 10px 0">
 	<h2>Latest Rundeck News</h2>
 	<ul class="newslist">
-  {% for post in site.categories.news limit:4 %}
+  {% for post in site.categories.news limit:6 %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
@@ -26,11 +26,19 @@ title: Job Scheduler and Runbook Automation
   </li>
 </ul>
 </div>
+
+<!-- twitter timeline widget managed by @rundeck account  -->
+<div class="grid_6" style="padding: 10px 0">
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Rundeck" data-widget-id="636037014563897347">Tweets by @Rundeck</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+<!-- old twitter timeline widget
 <div class="grid_6" style="padding: 10px 0">
 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Rundeck" data-widget-id="426903294401728512">Tweets by @Rundeck</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
   </div>
+-->
+
 <div class="clear"></div>
 </article>
 </section>
