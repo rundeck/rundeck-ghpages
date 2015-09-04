@@ -1,0 +1,110 @@
+---
+layout: stories
+title: John D'Esposito on Creating ChatOps and Incident Response Solutions for Financial Services Companies
+updatedate: September 2015
+---
+
+<table style="margin: 0px auto;">
+<tr>
+<td>	
+<ul>
+<li><h4>Enables "frictionless" collaboration and shared control</h4></li>
+<li><h4>Eliminates the waiting and miscommunication</h4></li>
+<li><h4>Shortens Lead Times, Improves MTTD, and Reduces MTTR</h4></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>&nbsp;</p>
+
+<p>Devopulence Consulting is a New York based, specialist firm that builds Cloud Management, Configuration Management, and Operations as a Service solutions for financial services companies moving to the public or private Cloud. Devopulence specialty is helping clients get the most out of an existing or upcoming Cloud infrastructure investment. 
+</p>
+<p>&nbsp;</p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IZUXKPQIXKs" frameborder="0" allowfullscreen></iframe>
+</p>
+<p>&nbsp;</p>
+<p align="center" style="font-style: italic; font-weight: bold;">“Our clients have realized that new tools aren’t enough -- success in the Cloud requires you to rethink how you approach your operations. We look for tools that make it easier to adopt this new way of thinking.”<br> -John D’Esposito (Chief Architect at Devopulence)</p>
+<p>&nbsp;</p>
+<p>A popular Devopulence area of focus is improving collaboration and smoothing handoffs between both individuals and teams. Devopulence features in both Rundeck and Sococo in a solution that is patterned after an idea called “ChatOps”.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="images/old_way_vs_chatops.png">
+</p>
+<p>&nbsp;</p>
+<h4>“ChatOps” design pattern?</h4>
+<p>ChatOps was born from the realization that frictionless collaboration and shared context are two of the keys to successful, high-velocity operations. What is the ultimate form of frictionless collaboration and shared context? Have everyone work in same room looking at the same screen. Unfortunately, in the real world, that is rarely possible.
+</p>
+<p>&nbsp;</p>
+<p>Enter the idea of ChatOps, a term first popularized at Github. How to ease collaboration? Use a persistent chat room to remove the barriers to communication (e.g. avoid email congestion, missed phone calls, ticket queues, etc.). Shared context? Have all of your operational tools push key information to that same chat room (e.g. alerts, metrics, automation tool output, etc.). In short, keep everyone focused on the same channel and give them what they need to do their work without leaving. If implemented correctly, this ChatOps way of working drives both a reduction in delivery lead times and an increase in organizational responsiveness</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="images/chatops_robots_people.png">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>Meeting the needs of complex financial institutions</h4>
+<p>Early in the development of their ChatOps inspired solution, Devopulence, lead by chief architect John D’Esposito, realized that their clients needed a richer experience than a chat service alone could provide. This lead them to leverage Sococo’s virtual office solution.</p>
+<p>&nbsp;</p>
+<p>Sococo encompasses persistent chat rooms into live meeting spaces that offer always-on voice and video communication. When a question demands the immediate attention and real-time, multi-party conversation that only a live meeting can deliver, teams can gather in a Sococo space dedicated to that conversation, where they share the relevant chat stream and tools. Team members working in their Sococo virtual offices can see the availability of all their colleagues and invite them to join a group meeting with just one click. The result is zero-friction communication with shared context for both information and people.</p>
+<p>&nbsp;</p>
+<p align="center" style="font-style: italic; font-weight: bold;">“Sococo helped us eliminate the chase. The waiting and communication gaps went away.”</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="images/sococo_screen.png">
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Concurrent to their Sococo use, Devopulence was already introducing Rundeck into their customers environments. Devopulence’s first use of Rundeck was to allow teams to define and share standard operating procedures.</p>
+<p>&nbsp;</p>
+<p align="center" style="font-style: italic; font-weight: bold;">“Rundeck is an essential tool for getting your operations under control -- and then safely putting that control into the hands of those who need it.”</p>
+<p>&nbsp;</p>
+<p>Across development, QA, or production environments, Rundeck’s access control and logging features allows companies to safely delegate operational actions to any internal user who need to act on those systems. In this capacity, Rundeck was being used by Devopulence’s customers for the full range of operational activity, from code deployment to ongoing administration (e.g. restarts, get status, troubleshooting, etc.)</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="images/chatops_rundeck_jobs.png">
+</p>
+<p>&nbsp;</p>
+<p>John and the Devopulence team soon realized that exciting benefits could be had by aligning their existing Sococo and Rundeck based solutions. Sococo would provide the virtual, real-time workspaces with persistent chat and Rundeck would enable users to take action and execute commands without leaving the new ChatOps style experience. Combining the ability to share context, collaborate instantly, and take action represented an opportunity to take a tremendous amount of friction out of an organization. And the best part? It was just a matter of integrating tools that were already in use.</p>
+<p>&nbsp;</p>
+<p align="center">
+<img src="images/chatops_solution_overview.png">
+</p>
+<p>&nbsp;</p>
+<p>Hubot and Lita are chatbots that  reside within a chat room , listen for instructions and execute them accordingly. Hubot is written in JavaScript and Lita is written in Ruby. The chatbots act as intermediaries, that integrate human interactions with loosely coupled remote systems and services. They enable humans to execute tasks on systems and services, receive alerts and status from those same systems and services without the end user ever leaving the chat room.</p>
+<p>&nbsp;</p>
+<p>One chatbot per chatroom is a typical design pattern.The chatbot integrates with multiple systems through open source APIs and provides easy extensibility for custom development. Typical interactions include the following:
+</p>
+<ul></ul>
+<li>trigger jenkins builds</li>
+<li>trigger Rundeck jobs</li>
+<li>display that status of Jira ticket</li>
+<li>check the health of AWS/EC2 hosts</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center">
+<iframe width="420" height="315" src="https://www.youtube.com/embed/9p0A2Y0muSE" frameborder="0" allowfullscreen></iframe>
+</p>
+<p style="font-size:85%; text-align:center">John giving a demo and explaining integration of Rundeck, Sococo, and Lita.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>Using Rundeck and Sococo for incident response</h4>
+<p>&nbsp;</p>
+<p align="center" style="font-style: italic; font-weight: bold;">“When the clock is ticking, Rundeck and Sococo cuts the amount time it takes to get people together, get them focused on the right information, and then take corrective action.”</p>
+<p>&nbsp;</p>
+<p>Incident response was one of the natural ChatOps inspired use cases put into place by the Devopsulance team. They found that the ChatOps implementation leveraging Rundeck and Sococo lets teams stay immersed in the details but still quickly collaborate and take action.</p>
+<p>&nbsp;</p>
+<p>When an incident is identified, a virtual room is created in Sococo and named with ticket ID and description. Integrations with monitoring and ticket tools (through tools like Hubot or Lita) help build the shared context around the incident. As needed, subject matters can quickly join a virtual room to provide requested assistance. Leveraging the Rundeck integration, users can execute common common actions like restarts, get a status, executing automated tests, or exploratory ad-hoc commands without leaving the context of the virtual room.</p>
+<p>&nbsp;</p>
+<p align="center" style="font-style: italic; font-weight: bold;">““In addition to obvious benefits of decreasing MTTR, I’ve seen the ChatOps way of working automatically build levels of collaboration and communication that clients didn’t know was possible”</p>
+
+
+
+
+
+
+
