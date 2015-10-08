@@ -7,17 +7,21 @@ service: Node Executor
 project_url: https://github.com/NetDocuments/rd-winrm-plugin
 integration: Rundeck Plugin
 description: Execute remote commands using winrm
-version: 1.0.0
+version: 1.3.0
 ---
 
-I've created  new plugin for winrm execution . 
+Rundeck Node Execution plugin that uses WinRM to connect to Windows and execute commands.
 
-Basic advantages versus previous one:
+This is a Rundeck Node Execution plugin that uses WinRM to connect to Windows and execute commands. 
+It uses the WinRM for Ruby Library to provide the WinRM implementation. 
 
-* Can run scripts, not only commands
-* Can run PowerShell, CMD and WQL not only CMD
-* Can avoid quoting problems (should be removed after core Rundeck fixes)
-* Can copy files to windows
+Main features: 
+
+
+* Can run scripts, not only commands 
+* Can run PowerShell, CMD and WQL not only CMD 
+* Can avoid quoting problems (should be removed after core Rundeck fixes) 
+* Can copy files to windows *Download URL: https://github.com/NetDocuments/rd-winrm-plugin/releases
 
 
 * Download URL: https://github.com/NetDocuments/rd-winrm-plugin/releases
