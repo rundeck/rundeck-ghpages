@@ -398,6 +398,18 @@ ul.meta li span+em{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9eef0', endColorstr='#e5ebed', GradientType=0);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.btn.greenLight {
+  color: #ffffff;
+  border-color: #3e8f3e;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+  background-color: #5cb85c;
+  background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb85c', endColorstr='#419641', GradientType=0);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /** download button **/
 
