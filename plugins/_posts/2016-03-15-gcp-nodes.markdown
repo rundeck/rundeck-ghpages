@@ -1,0 +1,11 @@
+---
+layout: plugin
+title: GCP Nodes Plugin
+tags: [GCE]
+service: ResourceModelSource
+rundeck_version: 1.5+
+project_url: https://github.com/jameshcoppens/rundeck-gcp-nodes-plugin
+description: This is a Resource Model Source plugin for RunDeck 1.5+ that provides Google Cloud Platform GCE Instances as nodes for the RunDeck server.
+---
+
+
