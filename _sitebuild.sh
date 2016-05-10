@@ -71,8 +71,8 @@ rd_deb_size: "$DEB_SIZE"
 rd_zipball: "https://github.com/rundeck/rundeck/zipball/v$CUR_VERSION"
 rd_tarball: "https://github.com/rundeck/rundeck/tarball/v$CUR_VERSION"
 rd_releasenotes: "https://github.com/rundeck/rundeck/blob/v$CUR_VERSION/RELEASE.md"
-markdown: kramdown
 END
+cat _config.yml.tmpl >> _config.yml
 
 echo "Created: _config.yml"
 
