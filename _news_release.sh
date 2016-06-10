@@ -2,7 +2,7 @@
 #/ generate news post about new Rundeck release ...
 #/ usage: <path/to/rundeck/src> <vers>
 
-set -exuo pipefail
+set -euo pipefail
 IFS=$'\n\t'
 readonly ARGS=("$@")
 DIR=
@@ -28,6 +28,7 @@ categories:
 comments: true
 author: Rundeck Project
 published: true
+news_rd_version: $VERS
 ---
 
 
@@ -39,18 +40,17 @@ A copy of the [release notes](https://github.com/rundeck/rundeck/blob/v$VERS/REL
 --------------------
 
 END
-	cat $DIR/RELEASE.md >>$FILE 
+	curl -q --fail https://raw.githubusercontent.com/rundeck/rundeck/v$VERS/RELEASE.md >> $FILE || die "Unable to download release notes"
 	echo "File created: $FILE"
 }
 
 check_args(){
 	: example to check args length
-	if [ ${#ARGS[@]} -lt 2 ] ; then
+	if [ ${#ARGS[@]} -lt 1 ] ; then
 		usage
 		exit 2
 	fi
-	DIR=${ARGS[0]}
-	VERS=${ARGS[1]}
+	VERS=${ARGS[0]}
 
 	FILE=$PWD/news/_posts/$DATE-rundeck-$VERS.md
 }
