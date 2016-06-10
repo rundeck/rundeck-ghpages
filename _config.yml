@@ -1,24 +1,15 @@
 baseurl: ""
 url: ""
 full_url: "http://www.rundeck.org"
-rd_version: "2.6.7"
-rd_jar_name: "rundeck-launcher-2.6.7.jar"
-rd_jar_sha: "3507dd797691fd314d12eb46374dd37724d00da2"
-rd_jar_url: "http://download.rundeck.org/jar/rundeck-launcher-2.6.7.jar"
-rd_jar_size: "88351106"
-rd_deb_name: "rundeck-2.6.7-1-GA.deb"
-rd_deb_url: "http://download.rundeck.org/deb/rundeck-2.6.7-1-GA.deb"
-rd_deb_sha: "afaef2b13756636057cef426d8d40b441d80e7bc"
-rd_deb_size: "101028776"
-rd_zipball: "https://github.com/rundeck/rundeck/zipball/v2.6.7"
-rd_tarball: "https://github.com/rundeck/rundeck/tarball/v2.6.7"
-rd_releasenotes: "https://github.com/rundeck/rundeck/blob/v2.6.7/RELEASE.md"
-markdown: kramdown
-gems:
-  - jekyll-seo-tag
-title: Rundeck.org
-description: Rundeck - Job Scheduler and Runbook Automation
-url: http://rundeck.org
-twitter:
-  username: rundeck
-logo: /images/rundeck2-512.png
+rd_version: "2.6.8"
+rd_jar_name: "rundeck-launcher-2.6.8.jar"
+rd_jar_sha: "5a5976ac3b76e64ac5296e1e62576f762869b9be"
+rd_jar_url: "http://download.rundeck.org/jar/rundeck-launcher-2.6.8.jar"
+rd_jar_size: "88601820"
+rd_deb_name: "rundeck-2.6.8-1-GA.deb"
+rd_deb_url: "http://download.rundeck.org/deb/rundeck-2.6.8-1-GA.deb"
+rd_deb_sha: "865c669c8694a9b6fa595363c9906cf771818337"
+rd_deb_size: "101245450"
+rd_zipball: "https://github.com/rundeck/rundeck/zipball/v2.6.8"
+rd_tarball: "https://github.com/rundeck/rundeck/tarball/v2.6.8"
+rd_releasenotes: "https://github.com/rundeck/rundeck/blob/v2.6.8/RELEASE.md"
