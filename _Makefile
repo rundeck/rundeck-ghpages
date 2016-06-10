@@ -11,11 +11,11 @@
 #
 
 
-.PHONY: site list upload release
+.PHONY: site list upload release news
 
 DLDIR=download/
 
-release: upload list site
+release: upload list site news
 
 
 list:
@@ -46,3 +46,8 @@ site:
 	[ -d "$(DIR)/release-$(VERSION)" ] || ( echo "DIR and VERSION required " ; false )
 	[ -n "$(REL)" ] || ( echo "REL required " ; false )
 	sh _sitebuild.sh $(VERSION) $(REL) $(DIR)
+
+news:
+	[ -n "$(VERSION)" ] || ( echo "VERSION required " ; false )
+	sh _news_release.sh $(VERSION)
+	#git add news/_posts
