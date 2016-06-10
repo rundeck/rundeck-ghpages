@@ -13,3 +13,14 @@ rd_deb_size: "101245450"
 rd_zipball: "https://github.com/rundeck/rundeck/zipball/v2.6.8"
 rd_tarball: "https://github.com/rundeck/rundeck/tarball/v2.6.8"
 rd_releasenotes: "https://github.com/rundeck/rundeck/blob/v2.6.8/RELEASE.md"
+markdown: kramdown
+gems:
+  - jekyll-seo-tag
+title: Rundeck.org
+description: Rundeck - Job Scheduler and Runbook Automation
+url: http://rundeck.org
+author:
+  twitter: rundeck
+twitter:
+  username: rundeck
+logo: /images/rundeck2-512.png
