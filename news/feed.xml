@@ -18,7 +18,6 @@
       <link>{{ site.full_url }}{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <dc:creator>{{ post.author }}</dc:creator>
-      <author>{% if post.author_email %}{{post.author_email}}{% else %}rundeck-discuss@googlegroups.com{% endif %}</author>
       <guid>{{ site.full_url }}{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
