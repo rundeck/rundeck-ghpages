@@ -2,7 +2,7 @@
 
 ---
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Rundeck News</title>
     <link>http://rundeck.org/news/</link>
@@ -17,7 +17,8 @@
       <title>{{ post.title }}</title>
       <link>{{ site.full_url }}{{ post.url }}</link>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-      <author>{{ post.author }}</author>
+      <dc:creator>{{ post.author }}</dc:creator>
+      <author>{% if post.author_email %}{{post.author_email}}{% else %}rundeck-discuss@googlegroups.com{% endif %}</author>
       <guid>{{ site.full_url }}{{ post.id }}</guid>
       <description>{{ post.content | xml_escape }}</description>
     </item>
