@@ -49,5 +49,5 @@ site:
 
 news:
 	[ -n "$(VERSION)" ] || ( echo "VERSION required " ; false )
-	sh _news_release.sh $(VERSION)
+	bash _news_release.sh $(VERSION)
 	#git add news/_posts
