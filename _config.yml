@@ -24,3 +24,8 @@ author:
 twitter:
   username: rundeck
 logo: /images/rundeck2-512.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/rundeck2-512.png
