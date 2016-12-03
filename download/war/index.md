@@ -3,6 +3,8 @@ title: Rundeck Wars
 layout: download
 download_type: War
 ---
+* [rundeck-2.7.1.war](http://download.rundeck.org/war/rundeck-2.7.1.war) (86611995 bytes) - 2016-12-03 01:54
+* [rundeck-2.7.1.war.asc](http://download.rundeck.org/war/rundeck-2.7.1.war.asc) (821 bytes) - 2016-12-03 01:54
 * [rundeck-2.7.0.war](http://download.rundeck.org/war/rundeck-2.7.0.war) (86611762 bytes) - 2016-12-01 01:41
 * [rundeck-2.7.0.war.asc](http://download.rundeck.org/war/rundeck-2.7.0.war.asc) (821 bytes) - 2016-12-01 01:41
 * [rundeck-2.6.11.war](http://download.rundeck.org/war/rundeck-2.6.11.war) (84807411 bytes) - 2016-11-15 22:10

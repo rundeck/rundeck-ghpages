@@ -3,6 +3,8 @@ title: Rundeck Launcher Jars
 layout: download
 download_type: Launcher Jar
 ---
+* [rundeck-launcher-2.7.1.jar](http://download.rundeck.org/jar/rundeck-launcher-2.7.1.jar) (91662401 bytes) - 2016-12-03 01:54
+* [rundeck-launcher-2.7.1.jar.asc](http://download.rundeck.org/jar/rundeck-launcher-2.7.1.jar.asc) (821 bytes) - 2016-12-03 01:54
 * [rundeck-launcher-2.7.0.jar](http://download.rundeck.org/jar/rundeck-launcher-2.7.0.jar) (91662236 bytes) - 2016-12-01 01:41
 * [rundeck-launcher-2.7.0.jar.asc](http://download.rundeck.org/jar/rundeck-launcher-2.7.0.jar.asc) (821 bytes) - 2016-12-01 01:41
 * [rundeck-launcher-2.6.11.jar](http://download.rundeck.org/jar/rundeck-launcher-2.6.11.jar) (88241586 bytes) - 2016-11-15 22:10
