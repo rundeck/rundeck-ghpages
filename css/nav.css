@@ -42,6 +42,17 @@ nav li a {
   display:block;
   padding: 5px 10px;
 }
+nav li.upgrade a h1{
+  
+  color: #FFC857;
+  color: #EDAE49;
+  color: #E1DD8F;
+  color: #F3A712;
+}
+nav li.upgrade:hover {
+  border-top: 3px solid #F3A712;
+//  background: #177E89;
+}
 nav li.index h1{
   font-family: Futura;
   color: white;
@@ -71,7 +82,10 @@ nav li.selected{
 	border-top: 3px solid red;
 	background: rgba(0,0,0,.50);
 }
-
+.rdstyle{
+  font-family: Futura;
+  text-transform: uppercase;
+}
 /* search box */
 .searchbox {
   margin: 10px 0 10px 0;
