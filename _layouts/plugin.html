@@ -25,11 +25,11 @@ layout: base
             <li>
               <strong><em>{{ page.integration }}</em></strong>
             </li>
-            {{% if page.service  != null %}}
+            {% if page.service  != null %}
             <li>
               <span>Related to:</span> <em> {{ page.service }} </em>
             </li>
-            {{% endif %}}
+            {% endif %}
             <li>
               <span>Rundeck compatible:</span> <em>{{ page.rundeck_version }}</em>
             </li>
