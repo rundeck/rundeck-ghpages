@@ -19,8 +19,7 @@ gems:
 title: Rundeck.org
 description: Rundeck - Job Scheduler and Runbook Automation
 url: http://rundeck.org
-author:
-  twitter: rundeck
+author: rundeck
 twitter:
   username: rundeck
 logo: /images/rundeck2-512.png
