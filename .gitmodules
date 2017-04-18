@@ -1,12 +1,6 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/rundeck/rundeck-docs.git
-[submodule "2.0.0-alpha1"]
-	path = 2.0.0-alpha1
-	url = https://github.com/rundeck/rundeck-docs.git
-[submodule "2.0.0-beta1"]
-	path = 2.0.0-beta1
-	url = https://github.com/rundeck/rundeck-docs.git
 [submodule "2.0.0"]
 	path = 2.0.0
 	url = https://github.com/rundeck/rundeck-docs.git
