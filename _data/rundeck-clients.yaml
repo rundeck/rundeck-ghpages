@@ -1,0 +1,49 @@
+
+- lang: go
+  projects:
+  - link: "https://github.com/lusis/go-rundeck"
+    comment: CLI tool, library
+    
+  - link: "https://github.com/apparentlymart/go-rundeck-api"
+    comment: library
+
+- lang: java
+  projects: 
+  - link: "https://rundeck.github.io/rundeck-cli/"
+    comment: CLI tool, official
+    
+  - link: "https://github.com/czunker/rundeck-api-java-client-android"
+    comment: library, for android
+    
+  - link: "https://github.com/rundeck/rundeck-api-java-client"
+    comment: library, no longer maintained
+    
+- lang: javascript
+  projects: 
+  - link: "https://github.com/jenscobie/node-rundeck"
+    comment: "library, incomplete"
+    
+  - link: "https://github.com/opentable/grunt-rundeck"
+    comment: "library, Grunt: invokes a rundeck job"
+    
+- lang: php
+  projects:
+  - link: "https://github.com/akramfares/rundeck-sdk-php"
+    comment: library
+
+- lang: python
+  projects:
+  - link: "https://github.com/antillion/arundeckrun"
+    comment: library
+    lang: python
+
+  - link: "https://github.com/pschmitt/pyrundeck"
+    comment: library
+    lang: python
+
+- lang: ruby
+  projects:
+  - link: "https://github.com/dblessing/rundeck-ruby"
+    comment: CLI tool, library
+    
+    

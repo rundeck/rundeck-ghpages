@@ -548,6 +548,9 @@ article.news header{
 article.news header+header{
   margin-top:0;
 }
+article.news p{
+  margin: 1em 0;
+}
 
 article .post_info{
   color:#808080;
