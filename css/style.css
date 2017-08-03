@@ -445,9 +445,8 @@ a.dlbutton:hover{
 
 a.button-large{
        padding: 8px;
-       margin: 10px;
        width: 200px;
-       margin: 0px auto;
+       margin: 30px auto;
        display: block;
        text-align: center;
        font-weight:bold;
