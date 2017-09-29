@@ -32,7 +32,7 @@ news_rd_version: $VERS
 ---
 
 
-[Download Rundeck $VERS now](http://rundeck.org/downloads.html)
+[Download Rundeck $VERS now](https://www.rundeck.com/download-page)
 
 
 A copy of the [release notes](https://github.com/rundeck/rundeck/blob/v$VERS/RELEASE.md) can be found below:
