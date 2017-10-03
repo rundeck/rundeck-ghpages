@@ -1,6 +1,6 @@
 ---
 layout: plugin
-title: dingtalk-incoming-webhoot-notification
+title: dingtalk-incoming-webhook-notification
 tags: [dingtalk]
 rundeck_version: 2.8.2+
 service: Notification
