@@ -4,15 +4,15 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Rundeck News</title>
-    <link>http://rundeck.org/news/</link>
-    <atom:link href="http://rundeck.org/news/feed.xml" rel="self" type="application/rss+xml" />
-    <description>News from the Rundeck Project</description>
+    <title>Updates from Rundeck, Inc.</title>
+    <link>http://rundeck.org/content/</link>
+    <atom:link href="http://rundeck.org/content/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Updates from Rundeck, Inc.</description>
     <language>en-us</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 
-    {% for post in site.categories.news limit:10 %}
+    {% for post in site.categories.content limit:10 %}
     <item>
       <title>{{ post.title }}</title>
       <link>{{ site.full_url }}{{ post.url }}</link>
