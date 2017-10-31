@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: Documentation is now searchable!
-categories: [news]
 comments: true
 author: <a href="http://about.me/alexhonor">Alex Honor</a>
 ---

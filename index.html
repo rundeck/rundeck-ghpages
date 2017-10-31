@@ -1,7 +1,7 @@
 ---
 
 layout: base
-title: Job Scheduler and Runbook Automation
+title: Job Scheduler and Orchestration
 
 ---
     
@@ -15,15 +15,15 @@ title: Job Scheduler and Runbook Automation
 <section>
     <article class="container_12">
   <div class="grid_6 newsbox" style="padding: 10px 0">
-	<h2>Latest Rundeck News</h2>
+	<h2>News from Rundeck, Inc.</h2>
 	<ul class="newslist">
-  {% for post in site.categories.news limit:6 %}
+  {% for post in site.categories.content limit:6 %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
   <li>
-    <a href="{{site.baseurl}}/news/">More&hellip;</a>
+    <a href="{{site.baseurl}}/content/">More&hellip;</a>
   </li>
 </ul>
 </div>

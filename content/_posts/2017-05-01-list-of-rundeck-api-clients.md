@@ -1,7 +1,6 @@
 ---
 title: List of Rundeck API Clients and Tools
-layout: news
-categories: [news]
+layout: content
 comments: true
 author: Rundeck Project
 ---

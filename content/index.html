@@ -1,7 +1,7 @@
 ---
 
 layout: base
-title: News
+title: Content Updates from Rundeck
 
 ---
 
@@ -10,7 +10,7 @@ title: News
   <article class="container_12 aboutlink">
       <div class="grid_12">    
         <a href="index.html" class="selfpage">
-      <h1>Rundeck Release Announcements</h1>
+      <h1>Updates from Rundeck, Inc.</h1>
         </a>
         </div>
       <div class="clear"></div>
@@ -19,8 +19,9 @@ title: News
   <article class="container_12 introduction">
   <div class="grid_12 ">
       <p>
-        <a href="feed.xml">RSS Feed</a>
+        This page lists new and interesting content from Rundeck, Inc. &nbsp;&nbsp;&nbsp;<a href="feed.xml">RSS Feed</a>
       </p>
+      <p></p>
       
   </div>
       <div class="clear"></div>
@@ -31,7 +32,7 @@ title: News
   <div class="grid_12">
 	
       <ul class="plugins">
-        {% for post in site.categories.news %}
+        {% for post in site.categories.content %}
         <li >
           <span class="integration">{{post.date|date_to_string}}</span>
           <a href="{{ post.url }}">

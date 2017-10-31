@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: New Rundeck Screencasts
-categories: [news]
 comments: true
 author: <a href="http://about.me/gschueler">Greg Schueler</a>
 ---

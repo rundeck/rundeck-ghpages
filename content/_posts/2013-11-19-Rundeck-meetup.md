@@ -1,8 +1,6 @@
 ---
-layout: news
+layout: content
 title: "Meetup Videos: Rundeck 2.0 Preview and How Salesforce.com uses Rundeck"
-categories: 
-  - news
 comments: true
 author: "Damon Edwards"
 published: true

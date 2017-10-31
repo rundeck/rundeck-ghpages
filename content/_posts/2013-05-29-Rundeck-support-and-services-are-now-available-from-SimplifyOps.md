@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: Rundeck support and services are now available from SimplifyOps
-categories: [news]
 comments: true
 author: <a href="http://about.me/alexhonor">Alex Honor</a>
 ---

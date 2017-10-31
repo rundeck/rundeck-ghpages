@@ -19,13 +19,7 @@ title: Downloads
     <article class="container_12">
     
     <div class="grid_6">
-        <h2>Vagrant Based Demo Instance</h2>
-        <div>
-
-            <p><a href="https://github.com/rundeck/anvils-demo" target="_blank">Anvils-Demo</a> is pre-configured with a simple example to show off Rundeck's basic features.</p>
-            
-        </div>
-        <br>
+        
         <h2>Self Contained Launcher Install</h2>
         <div>
 
@@ -49,6 +43,44 @@ title: Downloads
                 <div style="margin-left:2em;"><code>dpkg -i {{site.rd_deb_name}}</code></div>
                 
                 </div>
+       <br>
+         <h2>Yum RPM Install</h2>
+
+                <p>Execute:</p>
+                 <div style="margin-left:2em;">
+                 <code>yum install java-1.8.0</code>
+                 <br>
+                 <code>rpm -Uvh http://repo.rundeck.org/latest.rpm</code>
+                 <br>
+                 <code>yum install rundeck</code>
+                 <br>
+                  <code>service rundeckd start</code>
+                 </div>
+
+                     <p>Or fetch from bintray:</p>
+                     <div style="margin-left:2em;">
+                       <a href="https://bintray.com/rundeck/rundeck-rpm">https://bintray.com/rundeck/rundeck-rpm</a>
+                   </div>
+                   <br>
+         <h2>Next Steps</h2>
+         <p>Once you've installed and started the server, visit:
+         <code>http://localhost:4440</code> </p>
+         <p>
+         Check out the <a href="/docs/manual/getting-started.html">Getting Started</a> section of the Rundeck Guide.
+         </p>           
+
+
+               <p>&nbsp;</p>
+               <p>&nbsp;</p>
+               <p>&nbsp;</p>
+        <h2>Vagrant Based Demo Instance</h2>
+        <div>
+            <p><a href="https://github.com/rundeck/anvils-demo" target="_blank">Anvils-Demo</a> is pre-configured with a simple example to show off Rundeck's basic features.</p>          
+        </div>
+        <br>
+
+
+
     </div>
 
           <div class="grid_6">
@@ -58,7 +90,21 @@ title: Downloads
                       <p><a class="rd_releasenotes" href="{{site.rd_releasenotes}}">Version {{site.rd_version}}</a></p>
                   </div>
                   
-                   <h2><a href="https://github.com/rundeck/rundeck">Get the Source</a></h2>
+                   <h2>Release News</h2>
+                    <div class="callout">
+                        <ul class="newslist">
+  {% for post in site.categories.news limit:2 %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  <li>
+    <a href="{{site.baseurl}}/news/">More&hellip;</a>
+  </li>
+</ul>
+                    </div>
+
+                    <h2><a href="https://github.com/rundeck/rundeck">Get the Source</a></h2>
                     <div class="callout">
                         <p><a class="rd_tarball" href="{{site.rd_tarball}}">.tar.gz</a></p>
                         <p><a class="rd_zipball" href="{{site.rd_zipball}}">.zip</a></p>
@@ -98,48 +144,26 @@ title: Downloads
 
           <div class="clear"></div>
           <div class="grid_6">
-                <h2>Yum RPM Install</h2>
 
-                     <p>Execute:</p>
-                     <div style="margin-left:2em;">
-                       <code>yum install java-1.8.0</code>
-                       <br>
-                     <code>rpm -Uvh http://repo.rundeck.org/latest.rpm</code>
-                     <br>
-                     <code>yum install rundeck</code>
-                     <br>
-                     <code>service rundeckd start</code>
-                   </div>
-
-                     <p>Or fetch from bintray:</p>
-                     <div style="margin-left:2em;">
-                       <a href="https://bintray.com/rundeck/rundeck-rpm">https://bintray.com/rundeck/rundeck-rpm</a>
-                   </div>
              </div>
-            <div class="grid_6">
-                <h2>Hosted By</h2>
-                <div>
-                  <a href="https://bintray.com">
-                    <img src="images/downloads-by-bintray-150.png"/>
-                  </a>
-                </div>
-            </div>
+            
             <div class="grid_12">
                    
                    <h2>Signing Key</h2>
 
                    <p><a href="http://rundeck.org/keys/BUILD-GPG-KEY-Rundeck.org.key">BUILD-GPG-KEY-Rundeck.org.key</a></p>
                    <p><a href="https://gist.github.com/gschueler/6142c7c4eaa759b59da1">via https://gist.github.com</a></p>
+                <br>
+                <h2>Hosted By</h2>
+                <div>
+                  <a href="https://bintray.com">
+                    <img src="images/downloads-by-bintray-150.png"/>
+                  </a>
+                </div>
 
           </div>
             <div class="grid_12">
 
-                   <h2>Next Steps</h2>
-                       <p>Once you've installed and started the server, visit:
-                       <code>http://localhost:4440</code> </p>
-                       <p>
-                           Check out the <a href="/docs/manual/getting-started.html">Getting Started</a> section of the Rundeck Guide.
-                           </p>
                    
           </div>
               <div class="clear"></div>

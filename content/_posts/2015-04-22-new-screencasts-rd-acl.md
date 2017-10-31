@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: Rundeck 2.5 Screencasts - rd-acl
-categories: [news]
 comments: true
 author: <a href="http://about.me/gschueler">Greg Schueler</a>
 ---

@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: User Story - Automating Operations at Salesforce.com with Rundeck 
-categories: [news]
 comments: true
 author: Damon Edwards
 ---

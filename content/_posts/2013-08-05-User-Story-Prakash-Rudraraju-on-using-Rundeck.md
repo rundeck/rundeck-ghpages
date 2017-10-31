@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: User Story - Prakash Rudraraju on using Rundeck to provide visibility and self-service operations in secure environments 
-categories: [news]
 comments: true
 author: Damon Edwards
 ---

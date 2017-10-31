@@ -1,7 +1,6 @@
 ---
-layout: news
+layout: content
 title: April 2013 Meeting of CLUE
-categories: [news]
 comments: true
 author: <a href="http://about.me/alexhonor">Alex Honor</a>
 ---

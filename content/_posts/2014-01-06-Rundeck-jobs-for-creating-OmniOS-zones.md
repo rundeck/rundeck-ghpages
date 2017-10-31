@@ -1,8 +1,6 @@
 ---
-layout: news
+layout: content
 title: "Example: Rundeck jobs for creating OmniOS zones"
-categories: 
-  - news
 comments: true
 author: "Damon Edwards"
 published: true
