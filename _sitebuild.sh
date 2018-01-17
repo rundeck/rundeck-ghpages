@@ -26,7 +26,7 @@ DL_LOC=${3:-/tmp}
 JAR_NAME="rundeck-launcher-$CUR_VERSION.jar"
 JAR_URL="http://download.rundeck.org/jar/$JAR_NAME"
 
-DEB_NAME="rundeck-$CUR_VERSION-$CUR_REL.deb"
+DEB_NAME="rundeck_${CUR_VERSION}-${CUR_REL}_all.deb"
 DEB_URL="http://download.rundeck.org/deb/$DEB_NAME"
 
 #download url and calculate SHA hash
