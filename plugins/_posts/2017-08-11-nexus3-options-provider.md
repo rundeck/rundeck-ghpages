@@ -7,7 +7,7 @@ service: OptionProvider
 rundeck_version: 2.8+
 project_url: https://github.com/nongfenqi/nexus3-rundeck-plugin
 integration: External Plugin
-description: This Nexus plugin turns Nexus into an <a href="http://rundeck.org/docs/RunDeck-Guide.html#option-model-provider">Option provider</a> for RunDeck.
+description: This Nexus plugin turns Nexus into an <a href="http://rundeck.org/docs/manual/jobs.html#option-model-provider">Option provider</a> for Rundeck.
 ---
 
 Maven repository
