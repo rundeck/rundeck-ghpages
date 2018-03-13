@@ -45,7 +45,7 @@ blockquote{
   position: relative;
   
   /*Font*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.2;
   color: #666;
@@ -65,7 +65,7 @@ blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
   
   /*Font*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
   color: #999;
@@ -117,7 +117,7 @@ body, select, input, textarea {   color: #444; }
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
 
 a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #027fbd; text-decoration: none;}
+a, a:active, a:visited { color: red; text-decoration: none;}
 a:hover { text-decoration: underline; }
 
 ul, ol { margin-left: 1.8em; }
@@ -164,7 +164,7 @@ button {  width: auto; overflow: visible; }
  */
 
 body {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   background-color: #efefef;
@@ -318,10 +318,10 @@ article.aboutlink a {
     text-decoration: none;
 }
 article.aboutlink a:hover, article.aboutlink a.selfpage{
-      background-color: #333;
+      background-color: black;
 }
 article.aboutlink a h1{
-  color:white;
+  color:red;
   padding: 0 10px;
 }
 article.aboutlink a p{
@@ -396,7 +396,7 @@ ul.meta li span+em{
   background-image: linear-gradient(top, #e9eef0, #e5ebed);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9eef0', endColorstr='#e5ebed', GradientType=0);
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .btn.greenLight {
   color: #ffffff;
@@ -408,7 +408,7 @@ ul.meta li span+em{
   background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb85c', endColorstr='#419641', GradientType=0);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /** download button **/
@@ -425,7 +425,7 @@ a.dlbutton{
        background: -moz-linear-gradient(top,  #eee,  #ccc);
 
        text-decoration:none;
-       color: #027fbd;
+       color: red;
        text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
 
       -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
